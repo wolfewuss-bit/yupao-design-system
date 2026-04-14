@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>无障碍 Accessibility — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link active">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>内容策略 / 无障碍</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">无障碍 Accessibility</h1>
+  <p style="margin-bottom:24px;">鱼泡直聘致力于为所有用户提供平等的使用体验，包括视觉障碍、运动障碍、认知障碍等特殊群体。</p>
+
+  <section class="section">
+    <h2>对比度要求 Contrast Ratio</h2>
+    <p>遵循 WCAG 2.1 AA 标准，确保文字在背景上具有足够的可读性。</p>
+    <table class="spec-table">
+      <thead><tr><th>元素类型</th><th>最低对比度</th><th>WCAG 级别</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>正文文字（&lt;18px）</td><td>≥ 4.5:1</td><td>AA</td><td>主文字 rgba(0,0,0,0.85) 在白色背景上约 12.6:1 达标</td></tr>
+        <tr><td>大文字（≥18px Bold 或 ≥24px）</td><td>≥ 3:1</td><td>AA</td><td>标题文字通常满足此要求</td></tr>
+        <tr><td>UI 组件边框</td><td>≥ 3:1</td><td>AA</td><td>输入框边框、按钮边框等</td></tr>
+        <tr><td>非文本内容（图标）</td><td>≥ 3:1</td><td>AA</td><td>功能性图标需满足对比度要求</td></tr>
+        <tr><td>禁用态元素</td><td>无要求</td><td>—</td><td>禁用态不要求满足对比度标准</td></tr>
+      </tbody>
+    </table>
+
+    <h3>鱼泡直聘文字色对比度验证</h3>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>亮色值</th><th>白色背景对比度</th><th>是否达标</th></tr></thead>
+      <tbody>
+        <tr><td><code>color/text/primary</code></td><td>rgba(0,0,0,0.85)</td><td>~12.6:1</td><td>AA 达标</td></tr>
+        <tr><td><code>color/text/secondary</code></td><td>rgba(0,0,0,0.65)</td><td>~7.5:1</td><td>AA 达标</td></tr>
+        <tr><td><code>color/text/tertiary</code></td><td>rgba(0,0,0,0.45)</td><td>~4.1:1</td><td>注意:  仅大文字达标</td></tr>
+        <tr><td><code>color/text/disabled</code></td><td>rgba(0,0,0,0.25)</td><td>~2.2:1</td><td>— 禁用态豁免</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>触控目标 Touch Targets</h2>
+    <table class="spec-table">
+      <thead><tr><th>规范</th><th>最小尺寸</th><th>推荐尺寸</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>Apple HIG</td><td>44 × 44 pt</td><td>44 × 44 pt</td><td>iOS 平台标准</td></tr>
+        <tr><td>Material Design</td><td>48 × 48 dp</td><td>48 × 48 dp</td><td>Android 平台标准</td></tr>
+        <tr><td>WCAG 2.5.5</td><td>44 × 44 CSS px</td><td>—</td><td>Web 无障碍标准</td></tr>
+        <tr><td>鱼泡直聘</td><td>44 × 44 px</td><td>48 × 48 px</td><td>统一标准，兼顾双平台</td></tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>按钮最小高度 44px，宽度根据内容自适应但不小于 44px</li>
+      <li>列表项最小高度 52px，确保手指可准确点击</li>
+      <li>相邻可点击元素间距不小于 8px，避免误触</li>
+      <li>图标按钮视觉尺寸可小于 44px，但点击热区需扩展到 44×44px</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>语义化标记 Semantic Markup</h2>
+    <table class="spec-table">
+      <thead><tr><th>规则</th><th>说明</th><th>示例</th></tr></thead>
+      <tbody>
+        <tr><td>图片替代文本</td><td>所有功能性图片必须提供 alt 属性</td><td><code>&lt;img alt="用户头像"&gt;</code></td></tr>
+        <tr><td>装饰性图片</td><td>纯装饰图片使用空 alt</td><td><code>&lt;img alt="" role="presentation"&gt;</code></td></tr>
+        <tr><td>按钮标签</td><td>图标按钮必须提供 aria-label</td><td><code>&lt;button aria-label="返回"&gt;</code></td></tr>
+        <tr><td>表单标签</td><td>输入框必须关联 label</td><td><code>&lt;label for="phone"&gt;手机号&lt;/label&gt;</code></td></tr>
+        <tr><td>页面标题</td><td>每个页面有唯一的 title</td><td><code>&lt;title&gt;职位详情 - 鱼泡直聘&lt;/title&gt;</code></td></tr>
+        <tr><td>标题层级</td><td>标题标签按层级使用，不跳级</td><td>h1 → h2 → h3，不直接 h1 → h3</td></tr>
+        <tr><td>焦点管理</td><td>弹窗打开时焦点移入，关闭时焦点回到触发元素</td><td>Dialog 组件内置焦点管理</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>颜色不是唯一手段</h2>
+    <ul>
+      <li>错误状态：红色边框 + 错误图标 + 错误文字提示（三重信息）</li>
+      <li>成功状态：绿色背景 + 勾选图标 + 成功文字</li>
+      <li>链接：蓝色文字 + 下划线（或明确的按钮样式）</li>
+      <li>图表数据：颜色 + 图案/纹理 + 数据标签</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>动效无障碍</h2>
+    <div class="code-block">/* 尊重系统"减少动态效果"设置 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}</div>
+  </section>
+
+  <div class="page-nav">
+    <a href="naming.html">← 命名策略</a>
+    <a href="motion.html">动效 Motion →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

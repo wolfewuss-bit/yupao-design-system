@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>圆角 Radius — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link active">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>视觉 / 圆角</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">圆角 Radius</h1>
+  <p style="margin-bottom:24px;">圆角赋予界面元素柔和、亲切的视觉感受。鱼泡直聘采用统一的圆角阶梯，确保不同组件之间的视觉协调。</p>
+
+  <section class="section">
+    <h2>圆角阶梯 Radius Scale</h2>
+    <div class="radius-grid">
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:4px;"></div>
+        <div class="radius-label">4px<br><code>radius/xs</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:5px;"></div>
+        <div class="radius-label">5px<br><code>radius/s</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:6px;"></div>
+        <div class="radius-label">6px<br><code>radius/sm</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:8px;"></div>
+        <div class="radius-label">8px<br><code>radius/md</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:12px;"></div>
+        <div class="radius-label">12px<br><code>radius/lg</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:16px;"></div>
+        <div class="radius-label">16px<br><code>radius/xl</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:20px;"></div>
+        <div class="radius-label">20px<br><code>radius/xxl</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:24px;"></div>
+        <div class="radius-label">24px<br><code>radius/xxxl</code></div>
+      </div>
+      <div class="radius-item">
+        <div class="radius-shape" style="border-radius:999px;"></div>
+        <div class="radius-label">999px<br><code>radius/full</code></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>使用场景 Usage</h2>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>值</th><th>使用场景</th></tr></thead>
+      <tbody>
+        <tr><td><code>radius/xs</code></td><td>4px</td><td>小标签、Badge 角标、代码块</td></tr>
+        <tr><td><code>radius/s</code></td><td>5px</td><td>输入框、小按钮</td></tr>
+        <tr><td><code>radius/sm</code></td><td>6px</td><td>下拉菜单、Tooltip</td></tr>
+        <tr><td><code>radius/md</code></td><td>8px</td><td>卡片、对话框、主按钮</td></tr>
+        <tr><td><code>radius/lg</code></td><td>12px</td><td>大卡片、弹窗、底部面板</td></tr>
+        <tr><td><code>radius/xl</code></td><td>16px</td><td>底部弹出面板（Sheet）顶部圆角</td></tr>
+        <tr><td><code>radius/xxl</code></td><td>20px</td><td>大型浮层、全屏弹窗顶部</td></tr>
+        <tr><td><code>radius/xxxl</code></td><td>24px</td><td>特殊装饰性元素</td></tr>
+        <tr><td><code>radius/full</code></td><td>999px</td><td>胶囊按钮、头像、圆形图标</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>圆角规则</h2>
+    <ul>
+      <li><strong>嵌套圆角</strong>：内层圆角 = 外层圆角 - 内边距（确保视觉等距）</li>
+      <li><strong>一致性</strong>：同一层级的元素使用相同的圆角值</li>
+      <li><strong>胶囊形</strong>：使用 <code>radius/full (999px)</code> 实现完美胶囊形状</li>
+      <li><strong>头像</strong>：统一使用 <code>radius/full</code> 圆形裁切</li>
+    </ul>
+  </section>
+
+  <div class="page-nav">
+    <a href="spacing.html">← 间距 Spacing</a>
+    <a href="shadow.html">阴影 Shadow →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>资源 Resources — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout no-sidebar">
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>资源</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">资源 Resources</h1>
+  <p style="margin-bottom:24px;">获取鱼泡直聘设计系统的相关资源，包括设计文件、Token 定义、开发文档等。</p>
+
+  <section class="section">
+    <h2>设计资源</h2>
+    <div class="card-grid two-col">
+      <div class="value-card">
+        <div class="value-icon" style="background:#f3e8ff;"><svg viewBox="0 0 38 57" width="18" height="27" style="width:18px;height:27px;"><path fill="#1ABCFE" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"/><path fill="#0ACF83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0z"/><path fill="#FF7262" d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z"/><path fill="#F24E1E" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"/><path fill="#A259FF" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"/></svg></div>
+        <h3>Figma 组件库</h3>
+        <p>包含所有 UI 组件、颜色样式、文字样式的 Figma 组件库。设计师可直接在 Figma 中引用。</p>
+        <p style="margin-top:8px;"><a href="https://www.figma.com/design/lTTWwdrlwnDONZFVqwKZt1/%E9%B1%BC%E6%B3%A1%E7%9B%B4%E8%81%98?node-id=216-612&m=dev" target="_blank" style="font-size:13px;">打开 Figma 组件库 →</a></p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#DFF2EC;color:#06B578;"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <h3>DESIGN.md 文件</h3>
+        <p>完整的设计规范 Markdown 文件，包含所有 Token 定义、组件规范、设计原则。可直接用于 AI Agent 上下文。</p>
+        <p style="margin-top:8px;"><a href="鱼泡直聘_DESIGN.md" download="鱼泡直聘_DESIGN.md" style="font-size:13px;" onclick="downloadFile(event,'鱼泡直聘_DESIGN.md')">下载 DESIGN.md →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>多端适配格式</h2>
+    <p>设计资源支持以下开发平台，确保跨端一致性。</p>
+    <div class="card-grid three-col">
+      <div class="value-card">
+        <div class="value-icon" style="background:#f5f5f7;color:#333;"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" stroke="none"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></div>
+        <h3>iOS 原生</h3>
+        <p>Swift / SwiftUI 格式。Token 输出为 Asset Catalog Color Set 和 Swift 常量文件，适配 UIKit 与 SwiftUI。</p>
+        <p style="margin-top:8px;"><a href="#" onclick="downloadFile(event,'YPDesignTokens.swift')" style="font-size:13px;">下载 YPDesignTokens.swift →</a></p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#E8F5E9;color:#3DDC84;"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" stroke="none"><path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.27-.86-.31-.16-.69-.04-.86.27l-1.86 3.22c-1.44-.65-3.05-1.01-4.76-1.01-1.71 0-3.32.36-4.76 1.01L5.08 5.71c-.16-.31-.54-.43-.86-.27-.31.16-.43.55-.27.86L5.79 9.48C2.83 11.14.86 14.26.86 17.81h22.28c0-3.55-1.97-6.67-4.94-8.33zM7.22 14.58c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm9.56 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg></div>
+        <h3>Android 原生</h3>
+        <p>Kotlin / Jetpack Compose 格式。Token 输出为 XML 资源文件和 Compose Theme 对象。</p>
+        <p style="margin-top:8px;"><a href="#" onclick="downloadFile(event,'YPDesignTokens.xml')" style="font-size:13px;">下载 YPDesignTokens.xml →</a></p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#E3F2FD;color:#027DFD;"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" stroke="none"><path d="M14.314 0L2.3 12 6.35 16.05 22.364 0H14.314zM14.314 11.908L8.398 17.824 14.314 23.74H22.364L16.448 17.824 22.364 11.908H14.314z"/></svg></div>
+        <h3>Flutter</h3>
+        <p>Dart 格式。Token 输出为 ThemeData 和常量类，支持 Material 3 主题系统。</p>
+        <p style="margin-top:8px;"><a href="#" onclick="downloadFile(event,'YPDesignTokens.dart')" style="font-size:13px;">下载 YPDesignTokens.dart →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>DESIGN.md 文件说明</h2>
+    <p>DESIGN.md 是鱼泡直聘设计系统的核心文档，以 Markdown 格式维护，具有以下特点：</p>
+    <table class="spec-table">
+      <thead><tr><th>特性</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>格式</td><td>Markdown 纯文本，版本控制友好</td></tr>
+        <tr><td>内容</td><td>完整的 Token 定义、组件规范、设计原则、无障碍要求</td></tr>
+        <tr><td>用途</td><td>AI Agent 上下文、开发参考、设计交接、新人培训</td></tr>
+        <tr><td>维护</td><td>随设计系统版本同步更新</td></tr>
+        <tr><td>位置</td><td>项目根目录 <code>/DESIGN.md</code></td></tr>
+      </tbody>
+    </table>
+    <div class="code-block"># DESIGN.md 使用方式
+
+## 1. AI Agent 上下文
+将 DESIGN.md 作为 system prompt 或 context 提供给 AI Agent，
+使其生成的代码自动遵循设计规范。
+
+## 2. 开发参考
+开发者可直接查阅 DESIGN.md 获取 Token 值、组件规格等信息。
+
+## 3. 设计交接
+设计师与开发者之间的交接文档，确保设计意图准确传达。
+
+## 4. 新人培训
+新加入团队的成员可通过 DESIGN.md 快速了解设计系统。</div>
+  </section>
+
+  <section class="section">
+    <h2>开发资源</h2>
+    <table class="spec-table">
+      <thead><tr><th>资源</th><th>格式</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>Design Tokens (JSON)</td><td><code>.json</code></td><td>可直接导入到 Style Dictionary 等工具</td></tr>
+        <tr><td>Design Tokens (CSS)</td><td><code>.css</code></td><td>CSS Custom Properties 格式</td></tr>
+        <tr><td>Design Tokens (SCSS)</td><td><code>.scss</code></td><td>SCSS 变量格式</td></tr>
+        <tr><td>图标库 (SVG)</td><td><code>.svg</code></td><td>线性图标 SVG 文件</td></tr>
+        <tr><td>字体文件</td><td><code>.ttf/.otf</code></td><td>DIN Alternate 等自定义字体</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>参考链接</h2>
+    <ul>
+      <li><a href="https://design.youzan.com/strategy/naming-strategy.html">有赞 Zan Design — 命名策略</a></li>
+      <li><a href="https://github.com/VoltAgent/awesome-design-md">VoltAgent/awesome-design-md — 设计规范 Markdown 模板</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG 2.1 快速参考</a></li>
+      <li><a href="https://developer.apple.com/design/human-interface-guidelines/">Apple Human Interface Guidelines</a></li>
+      <li><a href="https://m3.material.io/">Material Design 3</a></li>
+    </ul>
+  </section>
+
+  <div class="page-nav">
+    <a href="tokens.html">← Tokens</a>
+    <a href="changelog.html">变更日志 →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

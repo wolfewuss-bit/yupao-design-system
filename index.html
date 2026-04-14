@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鱼泡直聘 · 设计规范</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<!-- 顶部导航 -->
+<header class="top-nav">
+  <div class="top-nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span>
+        <span class="logo-text">鱼泡直聘 Design</span>
+      </a>
+      <nav class="top-links">
+        <a href="index.html" class="active">设计语言</a>
+        <a href="components.html">组件</a>
+        <a href="tokens.html">Tokens</a>
+        <a href="resources.html">资源</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" title="切换主题">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- 主体 -->
+<div class="layout">
+  <!-- 侧边栏 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">设计语言</div>
+      <a href="index.html" class="sidebar-link active">介绍</a>
+      <a href="design-principles.html" class="sidebar-link">设计原则</a>
+      <a href="design-values.html" class="sidebar-link">设计价值观</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">视觉</div>
+      <a href="colors.html" class="sidebar-link">颜色 Color</a>
+      <a href="typography.html" class="sidebar-link">字体排版 Typography</a>
+      <a href="spacing.html" class="sidebar-link">间距 Spacing</a>
+      <a href="radius.html" class="sidebar-link">圆角 Radius</a>
+      <a href="shadow.html" class="sidebar-link">阴影 Shadow</a>
+      <a href="iconography.html" class="sidebar-link">图标 Iconography</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">内容策略</div>
+      <a href="naming.html" class="sidebar-link">命名策略</a>
+      <a href="copywriting.html" class="sidebar-link">文案规范</a>
+      <a href="accessibility.html" class="sidebar-link">无障碍</a>
+      <a href="motion.html" class="sidebar-link">动效 Motion</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">布局与模式</div>
+      <a href="layout.html" class="sidebar-link">布局原则</a>
+      <a href="responsive.html" class="sidebar-link">响应式适配</a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-title">其他</div>
+      <a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a>
+      <a href="changelog.html" class="sidebar-link">变更日志</a>
+    </div>
+  </aside>
+
+  <!-- 内容区 -->
+  <div class="content-area"><main class="content">
+    <div class="page-header">
+      <div class="page-anchor">
+        <span class="anchor-dot"></span>
+        介绍
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <h1 class="hero-title">鱼泡直聘 Design System</h1>
+      <div class="hero-actions">
+        <a href="colors.html" class="btn-primary">开始使用</a>
+        <a href="tokens.html" class="btn-secondary">查看 Tokens</a>
+      </div>
+    </div>
+
+    <!-- 鱼泡愿景 -->
+    <section class="section">
+      <h2>鱼泡愿景</h2>
+      <p style="font-size:18px;color:var(--color-text-primary);font-weight:500;">找工作，上鱼泡直聘</p>
+    </section>
+
+    <!-- 鱼泡使命 -->
+    <section class="section">
+      <h2>鱼泡使命</h2>
+      <p style="font-size:16px;color:var(--color-text-primary);">用科技和服务第一的理念，做招聘双方都满意的自动化招聘平台</p>
+    </section>
+
+    <!-- 鱼泡核心价值观 -->
+    <section class="section">
+      <h2>鱼泡核心价值观</h2>
+
+      <h3>1. 企业增量</h3>
+      <ul>
+        <li>多企业认证就能多职位（岗位），多好企业，就能多好职位（岗位）</li>
+        <li>第一服务对象：企业，提供职位</li>
+        <li>第二服务对象：求职者，提供简历</li>
+      </ul>
+
+      <h3>2. 招聘效果</h3>
+      <ul>
+        <li>让招聘方准确快速的招聘到合适的人才，用户至上，服务第一，关注留存。</li>
+      </ul>
+
+      <h3>3. 合理价格</h3>
+      <ul>
+        <li>合理价格是极致性价比的体现，用户复购的基础。</li>
+        <li>利润是商业的本分，员工福利与公司再投资发展的基础。</li>
+      </ul>
+
+      <h3>4. 成果导向</h3>
+      <ul>
+        <li>关注的是在实现目标的过程中个人的努力和最终呈现的结果，它隐含了两个概念：目标和个人的努力。</li>
+        <li>这种导向强调的是在追求目标的过程中个人的成长和提升，以及最终成果的达成。</li>
+        <li>成果导向的人更加注过程和结果的统一，他们认为通过努力和奋斗，最终会得到应有的回报和成果。</li>
+      </ul>
+
+      <h3>5. 简单高效</h3>
+      <ul>
+        <li>因为简单，所以高效。</li>
+        <li>因此必须拆分问题，化繁为简。包括人际关系也得简单，复杂了，就容易藏污纳垢，自然效率低。</li>
+        <li>第一性原理就是第一性目标。</li>
+      </ul>
+
+      <h3>6. 求实求真</h3>
+      <ul>
+        <li>求实：立足实际，尊重客观规律；</li>
+        <li>求真：追求真理，探索本质。</li>
+        <li>尊重是礼貌，和求实求真不违背，不是对立面。</li>
+      </ul>
+    </section>
+
+    <!-- 设计氛围 -->
+    <section class="section">
+      <h2>设计氛围</h2>
+      <table class="spec-table">
+        <thead><tr><th>维度</th><th>描述</th></tr></thead>
+        <tbody>
+          <tr><td>整体风格</td><td>现代、简洁、功能导向的移动端 UI</td></tr>
+          <tr><td>信息密度</td><td>中等偏高 — 列表卡片为主，信息层级清晰</td></tr>
+          <tr><td>视觉节奏</td><td>大面积留白 + 紧凑的内容区域，呼吸感与效率并重</td></tr>
+          <tr><td>品牌调性</td><td>蓝色科技感 + 黄色活力点缀，专业而不冰冷</td></tr>
+          <tr><td>暗夜模式</td><td>深色背景降低视觉疲劳，色彩饱和度微调以适配深色环境</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 设计系统构成 -->
+    <section class="section">
+      <h2>设计系统构成</h2>
+      <div class="card-grid four-col">
+        <a href="colors.html" class="nav-card">
+          <div class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+          <h3>视觉</h3>
+          <p>颜色、字体、间距、圆角、阴影、图标等视觉基础规范</p>
+        </a>
+        <a href="components.html" class="nav-card">
+          <div class="nav-card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+          <h3>组件</h3>
+          <p>按钮、输入框、卡片、标签等常用 UI 组件规范</p>
+        </a>
+        <a href="naming.html" class="nav-card">
+          <div class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3>内容策略</h3>
+          <p>命名策略、无障碍规范、动效规范等内容指导</p>
+        </a>
+        <a href="tokens.html" class="nav-card">
+          <div class="nav-card-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+          <h3>资源</h3>
+          <p>Design Tokens、Figma 组件库、DESIGN.md 文件下载</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 主题对比 -->
+    <section class="section">
+      <h2>双主题支持</h2>
+      <p>所有设计决策同时考虑亮色（鱼泡直聘）与暗夜（鱼泡暗夜）两套主题。</p>
+      <div class="theme-compare">
+        <div class="theme-card light-theme">
+          <div class="theme-card-header">鱼泡直聘（亮色）</div>
+          <div class="theme-card-body">
+            <div class="theme-row"><span>主背景</span><span class="color-chip" style="background:#FFFFFF;border:1px solid #E9EDF3;"></span><code>#FFFFFF</code></div>
+            <div class="theme-row"><span>主色</span><span class="color-chip" style="background:#0092FF;"></span><code>#0092FF</code></div>
+            <div class="theme-row"><span>主文字</span><span class="color-chip" style="background:rgba(0,0,0,0.85);"></span><code>rgba(0,0,0,0.85)</code></div>
+            <div class="theme-row"><span>分割线</span><span class="color-chip" style="background:#E9EDF3;"></span><code>#E9EDF3</code></div>
+          </div>
+        </div>
+        <div class="theme-card dark-theme">
+          <div class="theme-card-header">鱼泡暗夜（暗色）</div>
+          <div class="theme-card-body">
+            <div class="theme-row"><span>主背景</span><span class="color-chip" style="background:#1D1D1F;"></span><code>#1D1D1F</code></div>
+            <div class="theme-row"><span>主色</span><span class="color-chip" style="background:#149AFF;"></span><code>#149AFF</code></div>
+            <div class="theme-row"><span>主文字</span><span class="color-chip" style="background:rgba(255,255,255,0.85);"></span><code>rgba(255,255,255,0.85)</code></div>
+            <div class="theme-row"><span>分割线</span><span class="color-chip" style="background:#303033;"></span><code>#303033</code></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚导航 -->
+    <div class="page-nav">
+      <div></div>
+      <a href="design-principles.html" class="page-nav-next">设计原则 →</a>
+    </div>
+
+    <footer class="footer">
+      <p>鱼泡直聘 Design System v2.1.0 · 更新于 2026-04-13</p>
+      <p>参考：<a href="https://design.youzan.com/strategy/naming-strategy.html">有赞 Zan Design</a> · <a href="https://github.com/VoltAgent/awesome-design-md">VoltAgent/awesome-design-md</a></p>
+    </footer>
+  </main></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动效 Motion — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link active">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>内容策略 / 动效</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">动效 Motion</h1>
+  <p style="margin-bottom:24px;">动效为界面注入生命力，帮助用户理解状态变化和空间关系。鱼泡直聘的动效设计遵循"有意义、不打扰"的原则。</p>
+
+  <section class="section">
+    <h2>动效原则</h2>
+    <div class="card-grid two-col">
+      <div class="value-card">
+        <div class="value-icon" style="background:#E0F3FF;color:#0092FF;"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>有目的</h3>
+        <p>每个动效都应有明确的功能目的：引导注意力、反馈操作结果、表达空间关系</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#DFF2EC;color:#06B578;"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>快速响应</h3>
+        <p>动效不应阻碍用户操作，保持轻快的节奏，避免冗长的等待动画</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#FFEFDE;color:#FF8904;"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg></div>
+        <h3>自然流畅</h3>
+        <p>模拟物理世界的运动规律，使用缓动曲线让动画感觉自然</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon" style="background:#C4EDF7;color:#00CBFF;"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+        <h3>可访问</h3>
+        <p>尊重系统"减少动态效果"设置，为动效敏感用户提供替代方案</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>时长 Token Duration</h2>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>时长</th><th>使用场景</th></tr></thead>
+      <tbody>
+        <tr><td><code>motion/duration/fast</code></td><td>100ms</td><td>按钮按下反馈、开关切换、微交互</td></tr>
+        <tr><td><code>motion/duration/normal</code></td><td>200ms</td><td>颜色渐变、透明度变化、小元素出现/消失</td></tr>
+        <tr><td><code>motion/duration/slow</code></td><td>300ms</td><td>页面转场、弹窗出现、面板展开</td></tr>
+        <tr><td><code>motion/duration/slower</code></td><td>500ms</td><td>复杂动画、骨架屏闪烁、大面积内容切换</td></tr>
+      </tbody>
+    </table>
+
+    <h3>时长演示</h3>
+    <div class="motion-demo">
+      <div class="motion-box" style="transition:transform 0.1s,opacity 0.1s;">100ms<br>Fast</div>
+      <div class="motion-box" style="transition:transform 0.2s,opacity 0.2s;">200ms<br>Normal</div>
+      <div class="motion-box" style="transition:transform 0.3s,opacity 0.3s;">300ms<br>Slow</div>
+      <div class="motion-box" style="transition:transform 0.5s,opacity 0.5s;">500ms<br>Slower</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>缓动曲线 Easing</h2>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>cubic-bezier</th><th>说明</th><th>使用场景</th></tr></thead>
+      <tbody>
+        <tr><td><code>motion/easing/standard</code></td><td><code>cubic-bezier(0.4, 0, 0.2, 1)</code></td><td>标准缓动，先快后慢</td><td>大部分通用动画</td></tr>
+        <tr><td><code>motion/easing/decelerate</code></td><td><code>cubic-bezier(0, 0, 0.2, 1)</code></td><td>减速进入，元素从外部进入</td><td>弹窗出现、元素进入视口</td></tr>
+        <tr><td><code>motion/easing/accelerate</code></td><td><code>cubic-bezier(0.4, 0, 1, 1)</code></td><td>加速离开，元素退出</td><td>弹窗关闭、元素离开视口</td></tr>
+        <tr><td><code>motion/easing/spring</code></td><td><code>cubic-bezier(0.175, 0.885, 0.32, 1.275)</code></td><td>弹性效果，轻微回弹</td><td>按钮按下、点赞动画、趣味交互</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>常见动效场景</h2>
+    <table class="spec-table">
+      <thead><tr><th>场景</th><th>动画类型</th><th>时长</th><th>缓动</th></tr></thead>
+      <tbody>
+        <tr><td>页面推入（Push）</td><td>translateX 100% → 0</td><td>300ms</td><td>standard</td></tr>
+        <tr><td>页面返回（Pop）</td><td>translateX 0 → 100%</td><td>300ms</td><td>accelerate</td></tr>
+        <tr><td>弹窗出现</td><td>translateY 100% → 0 + fade in</td><td>300ms</td><td>decelerate</td></tr>
+        <tr><td>弹窗关闭</td><td>translateY 0 → 100% + fade out</td><td>200ms</td><td>accelerate</td></tr>
+        <tr><td>Toast 出现</td><td>fade in + scale 0.9 → 1</td><td>200ms</td><td>decelerate</td></tr>
+        <tr><td>Toast 消失</td><td>fade out</td><td>200ms</td><td>accelerate</td></tr>
+        <tr><td>按钮按下</td><td>scale 1 → 0.95</td><td>100ms</td><td>standard</td></tr>
+        <tr><td>列表项出现</td><td>fade in + translateY 8px → 0</td><td>200ms</td><td>decelerate</td></tr>
+        <tr><td>骨架屏闪烁</td><td>opacity 0.3 ↔ 0.7 循环</td><td>500ms × 2</td><td>standard</td></tr>
+        <tr><td>下拉刷新</td><td>旋转 loading 图标</td><td>持续</td><td>linear</td></tr>
+        <tr><td>Tab 切换</td><td>指示器 translateX</td><td>200ms</td><td>standard</td></tr>
+        <tr><td>主题切换</td><td>全局颜色渐变</td><td>300ms</td><td>standard</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>无障碍适配</h2>
+    <div class="code-block">/* 尊重系统"减少动态效果"设置 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}</div>
+  </section>
+
+  <div class="page-nav">
+    <a href="accessibility.html">← 无障碍</a>
+    <a href="layout.html">布局原则 →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

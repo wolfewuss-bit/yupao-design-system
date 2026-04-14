@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>颜色 Color — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link active">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>视觉 / 颜色</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">颜色体系 Color System</h1>
+  <p>采用三层 Token 架构：Core（基础层）→ Semantic（语义层）→ Component（组件层）。本规范以语义层为主。</p>
+  <p style="margin-bottom:24px;">点击色块可复制色值。使用右上角按钮切换亮色/暗夜主题查看对比。</p>
+
+  <section class="section">
+    <h2>主色系 Primary</h2>
+    <div class="color-grid">
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#0092FF;"></div><div class="color-swatch-info"><div class="color-swatch-name">主色</div><div class="color-swatch-token">color/primary/default</div><div class="color-swatch-hex">#0092FF / #149AFF</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#E0F3FF;"></div><div class="color-swatch-info"><div class="color-swatch-name">主色浅</div><div class="color-swatch-token">color/primary/light</div><div class="color-swatch-hex">#E0F3FF / #1D2A3F</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#99D3FF;"></div><div class="color-swatch-info"><div class="color-swatch-name">主色禁用</div><div class="color-swatch-token">color/primary/disabled</div><div class="color-swatch-hex">#99D3FF / #2B394F</div></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>品牌色 Brand</h2>
+    <div class="color-grid">
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#1A83FF;"></div><div class="color-swatch-info"><div class="color-swatch-name">品牌色蓝</div><div class="color-swatch-token">color/brand/blue</div><div class="color-swatch-hex">#1A83FF</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#FECF05;"></div><div class="color-swatch-info"><div class="color-swatch-name">品牌色黄</div><div class="color-swatch-token">color/brand/yellow</div><div class="color-swatch-hex">#FECF05</div></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>背景色 Background</h2>
+    <div class="color-grid">
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#FFFFFF;border-bottom:1px solid #E9EDF3;"></div><div class="color-swatch-info"><div class="color-swatch-name">背景-白色</div><div class="color-swatch-token">color/bg/primary</div><div class="color-swatch-hex">#FFFFFF / #1D1D1F</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#F5F6FA;"></div><div class="color-swatch-info"><div class="color-swatch-name">背景-浅灰</div><div class="color-swatch-token">color/bg/secondary</div><div class="color-swatch-hex">#F5F6FA / #131314</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#F5F7FC;"></div><div class="color-swatch-info"><div class="color-swatch-name">输入框背景</div><div class="color-swatch-token">color/bg/input</div><div class="color-swatch-hex">#F5F7FC / #2E2E31</div></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>语义色 Semantic</h2>
+    <div class="color-grid">
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#E8362E;"></div><div class="color-swatch-info"><div class="color-swatch-name">红 · 错误/危险</div><div class="color-swatch-token">color/danger/default</div><div class="color-swatch-hex">#E8362E / #FF5F5F</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#FFEBEC;"></div><div class="color-swatch-info"><div class="color-swatch-name">红浅</div><div class="color-swatch-token">color/danger/light</div><div class="color-swatch-hex">#FFEBEC / #3F2727</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#06B578;"></div><div class="color-swatch-info"><div class="color-swatch-name">绿 · 成功</div><div class="color-swatch-token">color/success/default</div><div class="color-swatch-hex">#06B578 / #44B138</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#DFF2EC;"></div><div class="color-swatch-info"><div class="color-swatch-name">绿浅</div><div class="color-swatch-token">color/success/light</div><div class="color-swatch-hex">#DFF2EC / #1E2C1C</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#FF8904;"></div><div class="color-swatch-info"><div class="color-swatch-name">橙 · 警告</div><div class="color-swatch-token">color/warning/default</div><div class="color-swatch-hex">#FF8904 / #EB8F26</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#FFEFDE;"></div><div class="color-swatch-info"><div class="color-swatch-name">橙浅</div><div class="color-swatch-token">color/warning/light</div><div class="color-swatch-hex">#FFEFDE / #422B10</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#00CBFF;"></div><div class="color-swatch-info"><div class="color-swatch-name">青 · 信息</div><div class="color-swatch-token">color/info/default</div><div class="color-swatch-hex">#00CBFF / #43B3DE</div></div></div>
+      <div class="color-swatch"><div class="color-swatch-block" style="background:#C4EDF7;"></div><div class="color-swatch-info"><div class="color-swatch-name">青浅</div><div class="color-swatch-token">color/info/light</div><div class="color-swatch-hex">#C4EDF7 / #11303C</div></div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>文字色 Text</h2>
+    <p>亮色模式基于黑色不透明度，暗夜模式反转为白色不透明度。</p>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>语义 Token</th><th>亮色值</th><th>暗夜值</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>黑85</td><td><code>color/text/primary</code></td><td>rgba(0,0,0,0.85)</td><td>rgba(255,255,255,0.85)</td><td>标题、主文字</td></tr>
+        <tr><td>黑65</td><td><code>color/text/secondary</code></td><td>rgba(0,0,0,0.65)</td><td>rgba(255,255,255,0.65)</td><td>副标题、次级文字</td></tr>
+        <tr><td>黑45</td><td><code>color/text/tertiary</code></td><td>rgba(0,0,0,0.45)</td><td>rgba(255,255,255,0.45)</td><td>占位符、辅助说明</td></tr>
+        <tr><td>黑25</td><td><code>color/text/disabled</code></td><td>rgba(0,0,0,0.25)</td><td>rgba(255,255,255,0.25)</td><td>禁用态文字</td></tr>
+        <tr><td>白100</td><td><code>color/overlay/full</code></td><td>rgba(255,255,255,1.0)</td><td>rgba(0,0,0,1.0)</td><td>纯白 / 纯黑</td></tr>
+        <tr><td>白85</td><td><code>color/overlay/heavy</code></td><td>rgba(255,255,255,0.85)</td><td>rgba(0,0,0,0.85)</td><td>强遮罩</td></tr>
+        <tr><td>白65</td><td><code>color/overlay/medium</code></td><td>rgba(255,255,255,0.65)</td><td>rgba(0,0,0,0.65)</td><td>中等遮罩</td></tr>
+        <tr><td>白45</td><td><code>color/overlay/light</code></td><td>rgba(255,255,255,0.45)</td><td>rgba(0,0,0,0.45)</td><td>轻遮罩</td></tr>
+        <tr><td>白25</td><td><code>color/overlay/subtle</code></td><td>rgba(255,255,255,0.25)</td><td>rgba(0,0,0,0.25)</td><td>极轻遮罩</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>分割线 & 蒙层</h2>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>语义 Token</th><th>亮色值</th><th>暗夜值</th></tr></thead>
+      <tbody>
+        <tr><td>分割线</td><td><code>color/border/divider</code></td><td>#E9EDF3</td><td>#303033</td></tr>
+        <tr><td>蒙层</td><td><code>color/overlay/mask</code></td><td>rgba(0,0,0,0.70)</td><td>rgba(0,0,0,0.80)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="index.html">← 介绍</a>
+    <a href="typography.html">字体排版 →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

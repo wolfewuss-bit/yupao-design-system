@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  yupao_design_tokens_android.xml
+  鱼泡直聘 Design System — Android Design Tokens
+  Auto-generated from DESIGN.md v2.1.0
+  Usage: Place in res/values/ directory
+-->
+<resources>
+
+    <!-- ==================== Colors: Light Theme ==================== -->
+
+    <!-- Primary -->
+    <color name="yp_color_primary_default">#FF0092FF</color>
+    <color name="yp_color_primary_light">#FFE0F3FF</color>
+    <color name="yp_color_primary_disabled">#FF99D3FF</color>
+
+    <!-- Brand -->
+    <color name="yp_color_brand_blue">#FF1A83FF</color>
+    <color name="yp_color_brand_yellow">#FFFECF05</color>
+
+    <!-- Background -->
+    <color name="yp_color_bg_primary">#FFFFFFFF</color>
+    <color name="yp_color_bg_secondary">#FFF5F6FA</color>
+    <color name="yp_color_bg_input">#FFF5F7FC</color>
+
+    <!-- Semantic: Danger -->
+    <color name="yp_color_danger_default">#FFE8362E</color>
+    <color name="yp_color_danger_light">#FFFFEBEC</color>
+
+    <!-- Semantic: Success -->
+    <color name="yp_color_success_default">#FF06B578</color>
+    <color name="yp_color_success_light">#FFDFF2EC</color>
+
+    <!-- Semantic: Warning -->
+    <color name="yp_color_warning_default">#FFFF8904</color>
+    <color name="yp_color_warning_light">#FFFFEFDE</color>
+
+    <!-- Semantic: Info -->
+    <color name="yp_color_info_default">#FF00CBFF</color>
+    <color name="yp_color_info_light">#FFC4EDF7</color>
+
+    <!-- Border -->
+    <color name="yp_color_border_divider">#FFE9EDF3</color>
+
+    <!-- Text -->
+    <color name="yp_color_text_primary">#D9000000</color>
+    <color name="yp_color_text_secondary">#A6000000</color>
+    <color name="yp_color_text_tertiary">#73000000</color>
+    <color name="yp_color_text_placeholder">#73000000</color>
+    <color name="yp_color_text_disabled">#40000000</color>
+
+    <!-- Overlay -->
+    <color name="yp_color_overlay_mask">#B3000000</color>
+
+    <!-- ==================== Colors: Dark Theme ==================== -->
+    <!-- Place in res/values-night/colors.xml -->
+
+    <!--
+    <color name="yp_color_primary_default">#FF149AFF</color>
+    <color name="yp_color_primary_light">#FF1D2A3F</color>
+    <color name="yp_color_primary_disabled">#FF2B394F</color>
+    <color name="yp_color_bg_primary">#FF1D1D1F</color>
+    <color name="yp_color_bg_secondary">#FF131314</color>
+    <color name="yp_color_bg_input">#FF2E2E31</color>
+    <color name="yp_color_danger_default">#FFFF5F5F</color>
+    <color name="yp_color_danger_light">#FF3F2727</color>
+    <color name="yp_color_success_default">#FF44B138</color>
+    <color name="yp_color_success_light">#FF1E2C1C</color>
+    <color name="yp_color_warning_default">#FFEB8F26</color>
+    <color name="yp_color_warning_light">#FF422B10</color>
+    <color name="yp_color_info_default">#FF43B3DE</color>
+    <color name="yp_color_info_light">#FF11303C</color>
+    <color name="yp_color_border_divider">#FF303033</color>
+    <color name="yp_color_text_primary">#D9FFFFFF</color>
+    <color name="yp_color_text_secondary">#A6FFFFFF</color>
+    <color name="yp_color_text_tertiary">#73FFFFFF</color>
+    <color name="yp_color_text_placeholder">#73FFFFFF</color>
+    <color name="yp_color_text_disabled">#40FFFFFF</color>
+    <color name="yp_color_overlay_mask">#CC000000</color>
+    -->
+
+    <!-- ==================== Dimensions: Font Size ==================== -->
+
+    <dimen name="yp_font_size_xs">10sp</dimen>
+    <dimen name="yp_font_size_xs_plus">11sp</dimen>
+    <dimen name="yp_font_size_sm">12sp</dimen>
+    <dimen name="yp_font_size_sm_plus">13sp</dimen>
+    <dimen name="yp_font_size_base">14sp</dimen>
+    <dimen name="yp_font_size_base_plus">15sp</dimen>
+    <dimen name="yp_font_size_md">16sp</dimen>
+    <dimen name="yp_font_size_lg">17sp</dimen>
+    <dimen name="yp_font_size_xl">19sp</dimen>
+    <dimen name="yp_font_size_2xl">21sp</dimen>
+    <dimen name="yp_font_size_3xl">23sp</dimen>
+    <dimen name="yp_font_size_4xl">25sp</dimen>
+    <dimen name="yp_font_size_5xl">27sp</dimen>
+
+    <!-- ==================== Dimensions: Spacing (4px modular) ==================== -->
+
+    <dimen name="yp_spacing_none">0dp</dimen>
+    <dimen name="yp_spacing_2xs">2dp</dimen>
+    <dimen name="yp_spacing_xs">4dp</dimen>
+    <dimen name="yp_spacing_xs_plus">6dp</dimen>
+    <dimen name="yp_spacing_sm">8dp</dimen>
+    <dimen name="yp_spacing_md">12dp</dimen>
+    <dimen name="yp_spacing_lg">16dp</dimen>
+    <dimen name="yp_spacing_xl">20dp</dimen>
+    <dimen name="yp_spacing_2xl">24dp</dimen>
+    <dimen name="yp_spacing_3xl">32dp</dimen>
+
+    <!-- ==================== Dimensions: Border Radius ==================== -->
+
+    <dimen name="yp_radius_xs">4dp</dimen>
+    <dimen name="yp_radius_icon">5dp</dimen>
+    <dimen name="yp_radius_sm">6dp</dimen>
+    <dimen name="yp_radius_md">8dp</dimen>
+    <dimen name="yp_radius_lg">12dp</dimen>
+    <dimen name="yp_radius_xl">16dp</dimen>
+    <dimen name="yp_radius_2xl">20dp</dimen>
+    <dimen name="yp_radius_3xl">24dp</dimen>
+    <dimen name="yp_radius_full">999dp</dimen>
+
+    <!-- ==================== Dimensions: Stroke ==================== -->
+
+    <dimen name="yp_stroke_divider">0.5dp</dimen>
+    <dimen name="yp_stroke_border">1dp</dimen>
+
+    <!-- ==================== Dimensions: Icon Size ==================== -->
+
+    <dimen name="yp_icon_size_xs">12dp</dimen>
+    <dimen name="yp_icon_size_sm">16dp</dimen>
+    <dimen name="yp_icon_size_md">24dp</dimen>
+    <dimen name="yp_icon_size_lg">32dp</dimen>
+    <dimen name="yp_icon_size_xl">48dp</dimen>
+
+    <!-- ==================== Integers: Motion Duration (ms) ==================== -->
+
+    <integer name="yp_motion_duration_instant">100</integer>
+    <integer name="yp_motion_duration_fast">200</integer>
+    <integer name="yp_motion_duration_normal">300</integer>
+    <integer name="yp_motion_duration_slow">500</integer>
+
+</resources>

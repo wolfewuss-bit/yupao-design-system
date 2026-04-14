@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>变更日志 Changelog — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link active">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>其他 / 变更日志</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">变更日志 Changelog</h1>
+  <p style="margin-bottom:24px;">记录鱼泡直聘设计系统的版本更新历史，便于团队追踪变更。</p>
+
+  <section class="section">
+    <h2>版本历史</h2>
+    <table class="spec-table">
+      <thead><tr><th>版本</th><th>日期</th><th>类型</th><th>变更内容</th></tr></thead>
+      <tbody>
+        <tr><td><strong>v2.2.0</strong></td><td>2026-04-14</td><td>🆕 新增</td><td>新增「文案规范」页面，整合产品文案规范 v1.5 全部内容（字词/时间/数字/薪资/符号/语气词/电话号码/简洁性/一致性/用户视角）</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增多端适配格式资源下载：YPDesignTokens.swift（iOS）、yupao_design_tokens_android.xml（Android）、yp_design_tokens.dart（Flutter）</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>介绍页新增鱼泡愿景、使命、核心价值观（企业增量/招聘效果/合理价格/成果导向/简单高效/求实求真）</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>组件页按钮新增禁用状态示例，输入框新增禁用状态示例</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>页面内容居中显示，优化大屏阅读体验</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>顶部导航改为 logo+链接居左、主题切换居右的布局</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>全站 emoji 图标替换为 SVG 矢量图标（Lucide 风格）</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>左上角 logo 替换为鱼泡直聘 App 图标</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>「组件」「Tokens」「资源」页面移除侧边栏，内容全宽居中</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>布局页面「页面结构」改为低保真线框图风格，右侧标注尺寸</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>DESIGN.md 下载链接改为 JS 触发下载，支持本地 file:// 协议</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>资源页 Figma 组件库链接指向真实 Figma 文件地址</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>设计原则页「命名策略」添加超链接跳转</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>资源页多端适配卡片移除格式表格，简化为描述+下载链接</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>Token 文件统一命名为 YPDesignTokens（.swift / .xml / .dart）</td></tr>
+        <tr><td></td><td></td><td>🔧 优化</td><td>资源页图标替换为品牌图标（Figma/Apple/Android/Flutter）</td></tr>
+        <tr><td></td><td></td><td>🗑 移除</td><td>介绍页移除「品牌定位」卡片区块和「服务于蓝领招聘平台的设计体系」副标题</td></tr>
+        <tr><td><strong>v2.1.0</strong></td><td>2026-04-13</td><td>🆕 新增</td><td>新增设计规范网站，包含完整的视觉、组件、布局等规范文档</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增 DESIGN.md 文件，支持 AI Agent 上下文使用</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增暗夜模式完整 Token 定义</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增动效规范（时长、缓动曲线、场景定义）</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增无障碍规范（对比度、触控区域、语义标记）</td></tr>
+        <tr><td><strong>v2.0.0</strong></td><td>2026-03-01</td><td>🔄 重构</td><td>Token 架构升级为三层结构（Core → Semantic → Component）</td></tr>
+        <tr><td></td><td></td><td>🔄 重构</td><td>颜色系统重构，统一语义化命名</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增品牌色定义（蓝 #1A83FF + 黄 #FECF05）</td></tr>
+        <tr><td></td><td></td><td>🔄 调整</td><td>间距系统调整为 4px 模块化网格</td></tr>
+        <tr><td><strong>v1.5.0</strong></td><td>2026-01-15</td><td>🆕 新增</td><td>新增圆角阶梯（4/5/6/8/12/16/20/24/999px）</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>新增阴影三级系统（SM/MD/LG）</td></tr>
+        <tr><td></td><td></td><td>🔄 调整</td><td>按钮高度统一为 44px</td></tr>
+        <tr><td><strong>v1.0.0</strong></td><td>2025-10-01</td><td>🎉 发布</td><td>鱼泡直聘设计系统 v1.0 正式发布</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>基础颜色体系、字体规范、间距规范</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>核心组件规范（按钮、输入框、卡片、标签）</td></tr>
+        <tr><td></td><td></td><td>🆕 新增</td><td>命名策略规范</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>版本号规则</h2>
+    <p>遵循语义化版本号（Semantic Versioning）：</p>
+    <div class="code-block">MAJOR.MINOR.PATCH
+
+MAJOR — 不兼容的重大变更（如 Token 重命名、架构调整）
+MINOR — 向后兼容的新功能（如新增组件、新增 Token）
+PATCH — 向后兼容的问题修复（如色值微调、文档修正）</div>
+  </section>
+
+  <section class="section">
+    <h2>变更类型说明</h2>
+    <table class="spec-table">
+      <thead><tr><th>标记</th><th>类型</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>🎉</td><td>发布</td><td>重大版本发布</td></tr>
+        <tr><td>🆕</td><td>新增</td><td>新增功能、组件或 Token</td></tr>
+        <tr><td>🔄</td><td>重构/调整</td><td>现有功能的重构或调整</td></tr>
+        <tr><td>🐛</td><td>修复</td><td>问题修复</td></tr>
+        <tr><td>注意</td><td>废弃</td><td>标记为废弃，将在未来版本移除</td></tr>
+        <tr><td>移除</td><td>移除</td><td>移除已废弃的功能</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="dos-donts.html">← Do's & Don'ts</a>
+    <div></div>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.2.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

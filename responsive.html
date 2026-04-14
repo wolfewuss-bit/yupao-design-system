@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>响应式适配 Responsive — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link active">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>布局与模式 / 响应式适配</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">响应式适配 Responsive</h1>
+  <p style="margin-bottom:24px;">鱼泡直聘以移动端为核心，需要适配不同尺寸的手机屏幕，确保在各种设备上提供一致的体验。</p>
+
+  <section class="section">
+    <h2>屏幕断点 Breakpoints</h2>
+    <table class="spec-table">
+      <thead><tr><th>设备类型</th><th>屏幕宽度</th><th>设计稿基准</th><th>代表设备</th></tr></thead>
+      <tbody>
+        <tr><td>小屏手机</td><td>320–374px</td><td>320px</td><td>iPhone SE (1st gen)</td></tr>
+        <tr><td>标准手机</td><td>375–413px</td><td>375px ⭐</td><td>iPhone 13/14/15</td></tr>
+        <tr><td>大屏手机</td><td>414–479px</td><td>414px</td><td>iPhone 14 Plus/Pro Max</td></tr>
+        <tr><td>平板（竖屏）</td><td>480–767px</td><td>—</td><td>iPad mini（如需适配）</td></tr>
+        <tr><td>平板（横屏）</td><td>768px+</td><td>—</td><td>iPad（如需适配）</td></tr>
+      </tbody>
+    </table>
+    <p>⭐ 375px 为主设计稿基准宽度，所有设计以此为标准。</p>
+  </section>
+
+  <section class="section">
+    <h2>安全区域 Safe Areas</h2>
+    <table class="spec-table">
+      <thead><tr><th>区域</th><th>iPhone (刘海屏)</th><th>iPhone (灵动岛)</th><th>Android</th></tr></thead>
+      <tbody>
+        <tr><td>顶部状态栏</td><td>44px</td><td>59px</td><td>24–48dp（因设备而异）</td></tr>
+        <tr><td>底部安全区</td><td>34px</td><td>34px</td><td>0（大部分设备）</td></tr>
+        <tr><td>左右安全区</td><td>0（竖屏）</td><td>0（竖屏）</td><td>0</td></tr>
+      </tbody>
+    </table>
+    <div class="code-block">/* iOS Safe Area 适配 */
+padding-top: env(safe-area-inset-top);
+padding-bottom: env(safe-area-inset-bottom);
+padding-left: env(safe-area-inset-left);
+padding-right: env(safe-area-inset-right);</div>
+  </section>
+
+  <section class="section">
+    <h2>触控规范 Touch Specs</h2>
+    <table class="spec-table">
+      <thead><tr><th>规范项</th><th>值</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>最小触控区域</td><td>44 × 44px</td><td>Apple HIG 标准</td></tr>
+        <tr><td>推荐触控区域</td><td>48 × 48px</td><td>Material Design 标准</td></tr>
+        <tr><td>触控间距</td><td>≥ 8px</td><td>相邻可点击元素最小间距</td></tr>
+        <tr><td>滑动阈值</td><td>10px</td><td>超过此距离判定为滑动手势</td></tr>
+        <tr><td>长按阈值</td><td>500ms</td><td>超过此时间判定为长按</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>适配策略</h2>
+    <ul>
+      <li><strong>弹性布局</strong>：使用百分比宽度和 flex 布局，内容自适应屏幕宽度</li>
+      <li><strong>固定边距</strong>：页面水平边距固定 16px，不随屏幕宽度变化</li>
+      <li><strong>字号不缩放</strong>：字号使用固定 px 值，不随屏幕宽度缩放</li>
+      <li><strong>图片自适应</strong>：图片宽度 100%，高度按比例缩放</li>
+      <li><strong>最大宽度</strong>：内容区最大宽度限制，避免在大屏上过度拉伸</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>横竖屏处理</h2>
+    <table class="spec-table">
+      <thead><tr><th>场景</th><th>处理方式</th></tr></thead>
+      <tbody>
+        <tr><td>竖屏（默认）</td><td>标准布局，所有页面默认竖屏设计</td></tr>
+        <tr><td>横屏</td><td>大部分页面锁定竖屏，视频播放等特殊场景支持横屏</td></tr>
+        <tr><td>折叠屏展开</td><td>内容区居中，最大宽度限制，两侧留白</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>文字适配</h2>
+    <ul>
+      <li><strong>系统字号设置</strong>：尊重用户的系统字号偏好，关键信息支持动态字号</li>
+      <li><strong>文字截断</strong>：单行截断使用省略号，多行截断最多 2 行</li>
+      <li><strong>多语言</strong>：预留文字长度弹性空间，中文通常比英文短</li>
+    </ul>
+  </section>
+
+  <div class="page-nav">
+    <a href="layout.html">← 布局原则</a>
+    <a href="dos-donts.html">Do's & Don'ts →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

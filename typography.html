@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>字体排版 Typography — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link active">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>视觉 / 字体排版</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">字体排版 Typography</h1>
+  <p style="margin-bottom:24px;">字体是界面信息传达的核心载体。鱼泡直聘采用系统原生字体栈，确保在不同平台上获得最佳渲染效果。</p>
+
+  <section class="section">
+    <h2>字体家族 Font Family</h2>
+    <table class="spec-table">
+      <thead><tr><th>平台</th><th>字体</th><th>Token</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td>iOS</td><td style="font-family:'PingFang SC',sans-serif;">PingFang SC</td><td><code>font/family/zh</code></td><td>中文内容（标题、正文、说明）</td></tr>
+        <tr><td>iOS</td><td style="font-family:'SF Pro Text',sans-serif;">SF Pro Text</td><td><code>font/family/en</code></td><td>英文、数字内容</td></tr>
+        <tr><td>通用</td><td style="font-family:'DIN Alternate',sans-serif;">DIN Alternate</td><td><code>font/family/num</code></td><td>金额、数据等强调数字</td></tr>
+        <tr><td>Android</td><td>Noto Sans SC / Roboto</td><td><code>font/family/zh</code></td><td>Android 平台中文/英文</td></tr>
+      </tbody>
+    </table>
+    <div class="code-block">font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;</div>
+  </section>
+
+  <section class="section">
+    <h2>字号阶梯 Font Size Scale</h2>
+    <p>基础字号 14px，采用递增阶梯。行高规则：<strong>line-height = font-size + 8px</strong>。</p>
+
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:27px;line-height:35px;font-weight:700;">鱼泡直聘 YuPao 27px</div>
+      <div class="typo-meta">27px / 35px · Bold<br><code>font/size/xxxl</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:24px;line-height:32px;font-weight:700;">鱼泡直聘 YuPao 24px</div>
+      <div class="typo-meta">24px / 32px · Bold<br><code>font/size/xxl</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:20px;line-height:28px;font-weight:600;">鱼泡直聘 YuPao 20px</div>
+      <div class="typo-meta">20px / 28px · SemiBold<br><code>font/size/xl</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:18px;line-height:26px;font-weight:600;">鱼泡直聘 YuPao 18px</div>
+      <div class="typo-meta">18px / 26px · SemiBold<br><code>font/size/lg</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:16px;line-height:24px;font-weight:500;">鱼泡直聘 YuPao 16px</div>
+      <div class="typo-meta">16px / 24px · Medium<br><code>font/size/md</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:14px;line-height:22px;font-weight:400;">鱼泡直聘 YuPao 14px</div>
+      <div class="typo-meta">14px / 22px · Regular<br><code>font/size/base</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:13px;line-height:21px;font-weight:400;">鱼泡直聘 YuPao 13px</div>
+      <div class="typo-meta">13px / 21px · Regular<br><code>font/size/sm</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:12px;line-height:20px;font-weight:400;">鱼泡直聘 YuPao 12px</div>
+      <div class="typo-meta">12px / 20px · Regular<br><code>font/size/xs</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:11px;line-height:19px;font-weight:400;">鱼泡直聘 YuPao 11px</div>
+      <div class="typo-meta">11px / 19px · Regular<br><code>font/size/xxs</code></div>
+    </div>
+    <div class="typo-row">
+      <div class="typo-sample" style="font-size:10px;line-height:18px;font-weight:400;">鱼泡直聘 YuPao 10px</div>
+      <div class="typo-meta">10px / 18px · Regular<br><code>font/size/xxxs</code></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>字重 Font Weight</h2>
+    <table class="spec-table">
+      <thead><tr><th>字重</th><th>Token</th><th>CSS 值</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td><span style="font-weight:400;">Regular 常规</span></td><td><code>font/weight/regular</code></td><td>400</td><td>正文、说明文字、辅助信息</td></tr>
+        <tr><td><span style="font-weight:500;">Medium 中等</span></td><td><code>font/weight/medium</code></td><td>500</td><td>次级标题、按钮文字、Tab 标签</td></tr>
+        <tr><td><span style="font-weight:600;">SemiBold 半粗</span></td><td><code>font/weight/semibold</code></td><td>600</td><td>页面标题、卡片标题、导航栏标题</td></tr>
+        <tr><td><span style="font-weight:700;">Bold 粗体</span></td><td><code>font/weight/bold</code></td><td>700</td><td>大标题、金额数字、强调内容</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>排版规则 Typography Rules</h2>
+    <table class="spec-table">
+      <thead><tr><th>规则</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>行高公式</td><td><code>line-height = font-size + 8px</code>（适用于所有字号）</td></tr>
+        <tr><td>最小字号</td><td>10px — 仅用于极端辅助场景（如角标），正文不低于 12px</td></tr>
+        <tr><td>段落间距</td><td>段落之间使用 12px 间距（<code>spacing/md</code>）</td></tr>
+        <tr><td>字间距</td><td>中文默认 0，英文标题可使用 -0.5px 紧凑字距</td></tr>
+        <tr><td>对齐方式</td><td>中文内容左对齐，数字金额右对齐，居中仅用于标题和空状态</td></tr>
+        <tr><td>截断规则</td><td>单行截断使用省略号 <code>…</code>，多行截断最多 2 行</td></tr>
+        <tr><td>数字字体</td><td>金额、数据使用 DIN Alternate 字体，增强数字辨识度</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>使用场景 Usage</h2>
+    <table class="spec-table">
+      <thead><tr><th>场景</th><th>字号</th><th>字重</th><th>颜色 Token</th></tr></thead>
+      <tbody>
+        <tr><td>页面大标题</td><td>24–27px</td><td>Bold 700</td><td><code>color/text/primary</code></td></tr>
+        <tr><td>导航栏标题</td><td>18px</td><td>SemiBold 600</td><td><code>color/text/primary</code></td></tr>
+        <tr><td>卡片标题</td><td>16px</td><td>Medium 500</td><td><code>color/text/primary</code></td></tr>
+        <tr><td>正文内容</td><td>14px</td><td>Regular 400</td><td><code>color/text/primary</code></td></tr>
+        <tr><td>辅助说明</td><td>12–13px</td><td>Regular 400</td><td><code>color/text/secondary</code></td></tr>
+        <tr><td>标签/角标</td><td>10–11px</td><td>Medium 500</td><td><code>color/text/tertiary</code></td></tr>
+        <tr><td>金额数字</td><td>20–27px</td><td>Bold 700</td><td><code>color/danger/default</code></td></tr>
+        <tr><td>按钮文字</td><td>16px</td><td>Medium 500</td><td><code>#FFFFFF</code>（主按钮）</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="colors.html">← 颜色 Color</a>
+    <a href="spacing.html">间距 Spacing →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

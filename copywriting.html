@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文案规范 Copywriting — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link active">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>内容策略 / 文案规范</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">文案规范 Copywriting</h1>
+  <p style="margin-bottom:24px;">产品文案是用户与产品对话的语言。统一、专业、友好的文案能提升用户信任感和使用效率。本规范适用于鱼泡直聘所有产品界面文案。</p>
+
+  <!-- 目录 -->
+  <div style="background:var(--color-bg-secondary);border-radius:12px;padding:20px 24px;margin-bottom:32px;border:1px solid var(--color-border);">
+    <div style="font-size:13px;font-weight:600;color:var(--color-text-tertiary);margin-bottom:8px;">目录</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;font-size:13px;">
+      <a href="#words" style="padding:4px 0;">一、字词规范</a>
+      <a href="#time" style="padding:4px 0;">二、时间格式</a>
+      <a href="#number" style="padding:4px 0;">三、数字规范</a>
+      <a href="#salary" style="padding:4px 0;">四、薪资格式</a>
+      <a href="#punctuation" style="padding:4px 0;">五、符号规范</a>
+      <a href="#tone" style="padding:4px 0;">六、语气词</a>
+      <a href="#phone" style="padding:4px 0;">七、电话号码</a>
+      <a href="#concise" style="padding:4px 0;">八、简洁性</a>
+      <a href="#consistency" style="padding:4px 0;">九、一致性</a>
+      <a href="#user-first" style="padding:4px 0;">十、从用户出发</a>
+    </div>
+  </div>
+
+  <!-- ==================== 一、字词规范 ==================== -->
+  <section class="section" id="words">
+    <h2>一、字词规范</h2>
+    <p>产品用词需统一、准确，避免常见错别字和不规范写法。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>不能使用</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td><strong>你</strong></td><td>您</td><td>引导、提示类文案中，第一人称统一用"你"。用户交互模板和营销类文案不限制</td></tr>
+        <tr><td><strong>登录</strong>（账号）</td><td>登陆（账号）</td><td>"登录"为正确用法</td></tr>
+        <tr><td><strong>账号</strong></td><td>帐号</td><td>"账号"为规范写法</td></tr>
+        <tr><td><strong>请稍候</strong></td><td>请稍后</td><td>稍候 = 稍微等候；稍后 = 过一会儿</td></tr>
+        <tr><td><strong>其他</strong></td><td>其它</td><td>"其他"可通用于人物、事物，鱼泡产品中统一用"其他"</td></tr>
+        <tr><td><strong>App</strong></td><td>APP</td><td>App 为正确大小写</td></tr>
+        <tr><td><strong>iOS</strong></td><td>ios、IOS、Ios</td><td>严格遵循 Apple 官方写法</td></tr>
+        <tr><td><strong>电脑端</strong></td><td>PC、Web、网页端</td><td>面向蓝领用户，使用更易理解的表述</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ==================== 二、时间格式 ==================== -->
+  <section class="section" id="time">
+    <h2>二、时间格式</h2>
+
+    <h3>1. 日期格式</h3>
+    <p>使用"年/月/日"作为单位，数字为个位数时前方不补 0；用"."连接时需补 0。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">2020年7月5日</div><div style="font-size:13px;color:var(--color-text-secondary);margin-top:4px;">2020.07.05</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">2020年07月05日</div><div style="font-size:13px;color:var(--color-text-secondary);margin-top:4px;">2020.7.5</div></div>
+    </div>
+
+    <h3>2. 时间格式</h3>
+    <p>使用"时/分/秒"作为单位，个位数不补 0；用":"连接时必须补 0。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">11时5分3秒</div><div style="font-size:13px;color:var(--color-text-secondary);margin-top:4px;">20:05:03</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">11时05分03秒</div><div style="font-size:13px;color:var(--color-text-secondary);margin-top:4px;">20:5:3</div></div>
+    </div>
+
+    <h3>3. 日期分隔符</h3>
+    <p>年月日分隔使用"."或"年月日"，不使用"-"、"/"、"、"。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>不能使用</th></tr></thead>
+      <tbody>
+        <tr><td>2020年7月15日 / 2020.07.15</td><td>2020-07-15 / 2020、07、15 / 2020/07/15</td></tr>
+      </tbody>
+    </table>
+
+    <h3>4. 日期区间</h3>
+    <p>表示日期区间时，统一用"-"连接。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:15px;">2020.07.06-2021.08.05</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:15px;">2020.07.06至2021.08.05</div></div>
+    </div>
+
+    <h3>5. 时间区间</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">18:00-19:30</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">18:00至19:30</div></div>
+    </div>
+
+    <h3>6. 年份不可简写</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">2020.07.06</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">20年7月6日</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== 三、数字规范 ==================== -->
+  <section class="section" id="number">
+    <h2>三、数字规范</h2>
+
+    <h3>1. 统计数值使用阿拉伯数字</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">共找到7个项目</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">共找到七个项目</div></div>
+    </div>
+
+    <h3>2. 数字与汉字之间不加空格</h3>
+    <p>数字或英文字母两侧为汉字时，不加任何空格。特殊情况可酌情添加。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">共3500家企业已入驻</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">共 3500 家企业已入驻</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== 四、薪资格式 ==================== -->
+  <section class="section" id="salary">
+    <h2>四、薪资格式</h2>
+
+    <h3>1. 薪资区间用"-"连接</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">9000-12000元/月</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">9000~12000元/月</div></div>
+    </div>
+
+    <h3>2. 万元取整规则</h3>
+    <p>薪资区间数值首尾均 ≥ 1万，且百位、十位、个位均为 0 时，以万为单位取整，最多保留小数点后 1 位。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>不能使用</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>9000-12000元/月</td><td>0.9-1.2万元/月</td><td>首值 &lt; 1万，不取整</td></tr>
+        <tr><td>12000-68020元/月</td><td>1.2-6.8万元/月</td><td>尾值个位非 0，不取整</td></tr>
+        <tr><td>1-1.6万元/月</td><td>10000-16000元/月</td><td>首尾均 ≥ 1万且末三位为 0，取整</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. 单位跟在区间末尾</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">1-1.6万元/月</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">1万-1.6万元/月</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== 五、符号规范 ==================== -->
+  <section class="section" id="punctuation">
+    <h2>五、符号规范</h2>
+
+    <h3>1. 中英文符号对比</h3>
+    <p>中英文符号需严格区分全角和半角。</p>
+    <table class="spec-table">
+      <thead><tr><th>符号</th><th>中文（全角）</th><th>英文（半角）</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>逗号</td><td>，</td><td>,</td><td></td></tr>
+        <tr><td>句号</td><td>。</td><td>.</td><td></td></tr>
+        <tr><td>问号</td><td>？</td><td>?</td><td></td></tr>
+        <tr><td>叹号</td><td>！</td><td>!</td><td></td></tr>
+        <tr><td>顿号</td><td>、</td><td>—</td><td>英文中无顿号，用逗号","代替</td></tr>
+        <tr><td>分号</td><td>；</td><td>;</td><td></td></tr>
+        <tr><td>引号</td><td>" "</td><td>" "</td><td>英文中双引号更通行</td></tr>
+        <tr><td>括号</td><td>（ ）</td><td>( )</td><td></td></tr>
+        <tr><td>省略号</td><td>……</td><td>...</td><td></td></tr>
+        <tr><td>书名号</td><td>《》</td><td>—</td><td>英文中无书名号，用斜体表示</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2. 具体符号使用</h3>
+
+    <h4 style="font-size:14px;margin:16px 0 6px;color:var(--color-text-primary);">a. 波浪号</h4>
+    <p>统一使用"~"表示数值范围。两个数值单位相同时，前一个单位可省略。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:15px;">请选择1~5项</div><div style="font-size:13px;color:var(--color-text-secondary);margin-top:4px;">已完成15~50%</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:15px;">请选择1项-5项</div><div style="font-size:13px;color:var(--color-text-secondary);margin-top:4px;">已完成15%~50%</div></div>
+    </div>
+
+    <h4 style="font-size:14px;margin:16px 0 6px;color:var(--color-text-primary);">b. 感叹号</h4>
+    <p>谨慎使用感叹号。普通提示文案不应使用，尤其避免多个连续感叹号。表达积极、重要或危险信息时可酌情使用。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>不能使用</th></tr></thead>
+      <tbody>
+        <tr><td>密码错误，请重试。</td><td>密码错误，请重试！！</td></tr>
+        <tr><td>恭喜！你获得优惠券1张。</td><td>—</td></tr>
+        <tr><td>请注意，此操作会导致数据永久丢失！</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <h4 style="font-size:14px;margin:16px 0 6px;color:var(--color-text-primary);">c. 省略号</h4>
+    <p>普通文案使用半角 3 点省略号"..."，正式说明文字使用 6 点省略号"......"。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">保存中...</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text">保存中. . .</div></div>
+    </div>
+
+    <h4 style="font-size:14px;margin:16px 0 6px;color:var(--color-text-primary);">d. 引号</h4>
+    <p>文字中的引用信息应使用引号，不得使用「」、[ ] 等符号代替。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:14px;">确定删除手机号"136****6567"吗？</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:14px;">确定删除手机号「136****6567」吗？</div></div>
+    </div>
+
+    <h4 style="font-size:14px;margin:16px 0 6px;color:var(--color-text-primary);">e. 括号</h4>
+    <p>中文语句中统一使用全角括号。中英混排时，英文句子内部用半角括号，其余用全角。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>不能使用</th></tr></thead>
+      <tbody>
+        <tr><td>招聘数据（昨日）已统计。</td><td>招聘数据 (昨日) 已统计。</td></tr>
+        <tr><td>求职会员（周卡）</td><td>求职会员(周卡)</td></tr>
+        <tr><td>小明说：He (Tom) has gone to Beijing.</td><td>小明说：He（Tom） has gone to Beijing.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. 其他符号规则</h3>
+    <p><strong>扩展名</strong>：文案中的文件扩展名统一不加点"."。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:14px;">仅支持上传png格式的简历</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:14px;">仅支持上传.png格式的简历</div></div>
+    </div>
+    <p style="margin-top:12px;"><strong>组件内文字</strong>：位于按钮、单选框、复选框、输入框提示文字中的文案，结尾不带句号。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:13px;">&#9744; 我已阅读并同意《鱼泡直聘用户隐私协议》</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:13px;">&#9744; 我已阅读并同意《鱼泡直聘用户隐私协议》。</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== 六、语气词 ==================== -->
+  <section class="section" id="tone">
+    <h2>六、语气词</h2>
+    <p>禁止使用影响平台专业度与严谨性的语气词（营销类文案谨慎使用，不作限制）。</p>
+    <div style="background:var(--color-danger-light);border:1px solid var(--color-danger);border-radius:12px;padding:16px 20px;margin:12px 0;">
+      <div style="font-size:13px;font-weight:600;color:var(--color-danger);margin-bottom:8px;">禁止使用的语气词</div>
+      <p style="font-size:13px;color:var(--color-text-primary);margin:0;line-height:2;">
+        啊、呀、呢、吧、哟、哇、啦、拉、哦、啊呀、哎哟、嘛、呗、喽、呵、嘿、嗨、呀哈、哟呵、嗯呢、哼、哎……
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 七、电话号码 ==================== -->
+  <section class="section" id="phone">
+    <h2>七、电话号码隐藏格式</h2>
+    <p>电话号码统一隐藏中间四位（若涉及风控因素可忽略此条规范）。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">158****8888</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:14px;">158********</div><div style="font-size:12px;color:var(--color-text-tertiary);margin-top:4px;">158******88 / 1588888****</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== 八、简洁性 ==================== -->
+  <section class="section" id="concise">
+    <h2>八、简洁性</h2>
+
+    <h3>1. 语句简明易懂</h3>
+    <p>文字应简明易懂，断句合理，避免复杂的语句结构。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:14px;">你有未保存的内容，确定放弃并返回吗？</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">错误示范</span></div><div class="naming-text" style="font-size:14px;">确定放弃未保存的内容并返回吗？</div></div>
+    </div>
+
+    <h3>2. 占位文本精简</h3>
+    <p>如果结合界面环境可以明确知道含义，占位文本可以精简。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:14px;">占位文本：搜索</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">避免使用</span></div><div class="naming-text" style="font-size:14px;">占位文本：搜索简历</div></div>
+    </div>
+  </section>
+
+  <!-- ==================== 九、一致性 ==================== -->
+  <section class="section" id="consistency">
+    <h2>九、一致性</h2>
+
+    <h3>1. 语序结构一致</h3>
+    <p>在语序上保持一致的结构，避免"动+名+状"、"名+动+状"混用。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>避免使用</th></tr></thead>
+      <tbody>
+        <tr><td>文件上传失败<br>数据加载失败<br>经历保存失败</td><td>文件上传失败<br>数据加载失败<br><span style="color:var(--color-danger);font-weight:600;">保存经历失败</span></td></tr>
+      </tbody>
+    </table>
+
+    <h3>2. 行动点与目标页标题一致</h3>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>避免使用</th></tr></thead>
+      <tbody>
+        <tr><td>行动点按钮：编辑权限<br>目标页标题：编辑权限</td><td>行动点按钮：编辑权限<br><span style="color:var(--color-danger);font-weight:600;">目标页标题：权限编辑</span></td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. 同类文案跨界面一致</h3>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>避免使用</th></tr></thead>
+      <tbody>
+        <tr><td>界面A：修改职位<br>界面B：修改职位</td><td>界面A：修改职位<br><span style="color:var(--color-danger);font-weight:600;">界面B：更改职位</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ==================== 十、从用户出发 ==================== -->
+  <section class="section" id="user-first">
+    <h2>十、从用户出发</h2>
+
+    <h3>1. 用户视角描述</h3>
+    <p>从用户视角描述信息，而非从产品或开发的角度。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:13px;">为保证流畅的使用体验，请勿重复操作。</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">避免使用</span></div><div class="naming-text" style="font-size:13px;">为保证系统性能，请勿重复操作。</div></div>
+    </div>
+
+    <h3>2. 使用用户语言</h3>
+    <p>避免技术词汇，使用用户能理解的表述。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:14px;">确定删除当前职位吗？</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">避免使用</span></div><div class="naming-text" style="font-size:14px;">确定删除当前岗位吗？</div></div>
+    </div>
+
+    <h3>3. 提供解决方案</h3>
+    <p>多用支持、鼓励语气告诉用户需要做什么，避免只说问题而不提解决方案。</p>
+    <table class="spec-table">
+      <thead><tr><th>应该使用</th><th>避免使用</th></tr></thead>
+      <tbody>
+        <tr><td>密码错误，请重试。</td><td>密码错误。</td></tr>
+        <tr><td>项目名称不可为空，请重试。</td><td>提交失败。</td></tr>
+        <tr><td>抱歉，你当前不能参加此活动，请试试其他活动吧。</td><td>你暂无资格参与此活动。</td></tr>
+      </tbody>
+    </table>
+
+    <h3>4. 避免命令语气</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:13px;">请输入描述，140字以内</div><div style="font-size:12px;color:var(--color-text-tertiary);margin-top:4px;">描述不可超过140字</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">避免使用</span></div><div class="naming-text" style="font-size:13px;">不能超过140字</div></div>
+    </div>
+
+    <h3>5. 避免绝对语气</h3>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text" style="font-size:13px;">平台不会泄露你的私密信息。</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">避免使用</span></div><div class="naming-text" style="font-size:13px;">平台绝对不会泄露你的私密信息。</div></div>
+    </div>
+
+    <h3>6. 谨慎使用口语化文案</h3>
+    <p>鱼泡产品中应谨慎使用口语化、情感化文案或网络用语。</p>
+    <div class="naming-example">
+      <div class="naming-correct"><div class="naming-label"><span style="color:#06B578;font-weight:600;">正确示范</span></div><div class="naming-text">暂无数据</div></div>
+      <div class="naming-wrong"><div class="naming-label"><span style="color:#E8362E;font-weight:600;">避免使用</span></div><div class="naming-text" style="font-size:14px;">好像还没有任何数据哦~</div></div>
+    </div>
+
+    <h3>7. 企业/公司的用法</h3>
+    <table class="spec-table">
+      <thead><tr><th>场景</th><th>用法</th></tr></thead>
+      <tbody>
+        <tr><td>专有名词（如企业年报、小微企业等）</td><td>按照实际的专业名称使用</td></tr>
+        <tr><td>营销类文案</td><td>不限制使用企业/公司</td></tr>
+        <tr><td>产品功能可映射到法律规范或合规要求</td><td>需要用"公司"，不能使用"企业"</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="naming.html">&larr; 命名策略</a>
+    <a href="accessibility.html">无障碍 &rarr;</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0 · 产品文案规范 v1.5</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

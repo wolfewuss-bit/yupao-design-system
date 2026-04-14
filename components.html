@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>组件 Components — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout no-sidebar">
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>组件</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">组件 Components</h1>
+  <p style="margin-bottom:24px;">鱼泡直聘的核心 UI 组件规范，包含按钮、输入框、卡片、标签等常用组件的视觉与交互定义。</p>
+
+  <!-- Button -->
+  <section class="section">
+    <h2>按钮 Button</h2>
+    <p>按钮是最常用的交互组件，用于触发操作。鱼泡直聘定义了 5 种按钮类型。</p>
+
+    <h3>按钮示例</h3>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
+      <button style="height:44px;padding:0 24px;border-radius:8px;background:#0092FF;color:#fff;border:none;font-size:16px;font-weight:500;cursor:pointer;">主要按钮</button>
+      <button style="height:44px;padding:0 24px;border-radius:8px;background:transparent;color:#0092FF;border:1px solid #0092FF;font-size:16px;font-weight:500;cursor:pointer;">次要按钮</button>
+      <button style="height:44px;padding:0 24px;border-radius:8px;background:#E8362E;color:#fff;border:none;font-size:16px;font-weight:500;cursor:pointer;">危险按钮</button>
+      <button style="height:36px;padding:0 20px;border-radius:999px;background:#0092FF;color:#fff;border:none;font-size:14px;font-weight:500;cursor:pointer;">胶囊按钮</button>
+      <button style="height:44px;padding:0 12px;background:transparent;color:#0092FF;border:none;font-size:14px;font-weight:500;cursor:pointer;">文字按钮</button>
+      <button disabled style="height:44px;padding:0 24px;border-radius:8px;background:#99D3FF;color:rgba(255,255,255,0.65);border:none;font-size:16px;font-weight:500;cursor:not-allowed;">禁用按钮</button>
+    </div>
+
+    <table class="spec-table">
+      <thead><tr><th>类型</th><th>高度</th><th>圆角</th><th>背景色</th><th>文字色</th><th>字号/字重</th></tr></thead>
+      <tbody>
+        <tr><td>Primary 主要</td><td>44px</td><td>8px</td><td><code>#0092FF</code></td><td><code>#FFFFFF</code></td><td>16px / Medium 500</td></tr>
+        <tr><td>Secondary 次要</td><td>44px</td><td>8px</td><td>透明</td><td><code>#0092FF</code></td><td>16px / Medium 500</td></tr>
+        <tr><td>Danger 危险</td><td>44px</td><td>8px</td><td><code>#E8362E</code></td><td><code>#FFFFFF</code></td><td>16px / Medium 500</td></tr>
+        <tr><td>Capsule 胶囊</td><td>36px</td><td>999px</td><td><code>#0092FF</code></td><td><code>#FFFFFF</code></td><td>14px / Medium 500</td></tr>
+        <tr><td>Text 文字</td><td>44px</td><td>—</td><td>透明</td><td><code>#0092FF</code></td><td>14px / Medium 500</td></tr>
+      </tbody>
+    </table>
+
+    <h3>按钮状态</h3>
+    <table class="spec-table">
+      <thead><tr><th>状态</th><th>变化</th></tr></thead>
+      <tbody>
+        <tr><td>Default 默认</td><td>正常显示</td></tr>
+        <tr><td>Pressed 按下</td><td>opacity: 0.85，阴影降级</td></tr>
+        <tr><td>Disabled 禁用</td><td>背景 <code>#99D3FF</code>，不可点击</td></tr>
+        <tr><td>Loading 加载</td><td>显示 loading 动画，不可点击</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Input -->
+  <section class="section">
+    <h2>输入框 Input</h2>
+    <p>输入框用于收集用户文本输入，支持默认、聚焦、错误三种状态。</p>
+
+    <h3>输入框示例</h3>
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:360px;margin:16px 0;">
+      <input type="text" placeholder="请输入内容" style="height:44px;padding:0 12px;border-radius:8px;background:#F5F7FC;border:1px solid #E9EDF3;font-size:14px;outline:none;color:rgba(0,0,0,0.85);">
+      <input type="text" placeholder="聚焦状态" style="height:44px;padding:0 12px;border-radius:8px;background:#F5F7FC;border:1px solid #0092FF;font-size:14px;outline:none;color:rgba(0,0,0,0.85);">
+      <div>
+        <input type="text" value="错误内容" style="height:44px;padding:0 12px;border-radius:8px;background:#F5F7FC;border:1px solid #E8362E;font-size:14px;outline:none;color:rgba(0,0,0,0.85);width:100%;">
+        <div style="font-size:12px;color:#E8362E;margin-top:4px;">请输入正确的手机号</div>
+      </div>
+      <input type="text" value="禁用状态" disabled style="height:44px;padding:0 12px;border-radius:8px;background:#F5F6FA;border:1px solid #E9EDF3;font-size:14px;outline:none;color:rgba(0,0,0,0.25);cursor:not-allowed;">
+    </div>
+
+    <table class="spec-table">
+      <thead><tr><th>状态</th><th>背景色</th><th>边框色</th><th>文字色</th></tr></thead>
+      <tbody>
+        <tr><td>Default 默认</td><td><code>#F5F7FC</code></td><td><code>#E9EDF3</code></td><td><code>rgba(0,0,0,0.85)</code></td></tr>
+        <tr><td>Focus 聚焦</td><td><code>#F5F7FC</code></td><td><code>#0092FF</code></td><td><code>rgba(0,0,0,0.85)</code></td></tr>
+        <tr><td>Error 错误</td><td><code>#F5F7FC</code></td><td><code>#E8362E</code></td><td><code>rgba(0,0,0,0.85)</code></td></tr>
+        <tr><td>Disabled 禁用</td><td><code>#F5F6FA</code></td><td><code>#E9EDF3</code></td><td><code>rgba(0,0,0,0.25)</code></td></tr>
+      </tbody>
+    </table>
+    <p>输入框规格：高度 44px，圆角 8px，内边距 12px，字号 14px Regular。</p>
+  </section>
+
+  <!-- Card -->
+  <section class="section">
+    <h2>卡片 Card</h2>
+    <p>卡片是信息聚合的容器，用于展示职位、人才等核心内容。</p>
+
+    <h3>卡片示例</h3>
+    <div style="max-width:360px;margin:16px 0;background:var(--color-bg-primary);border-radius:12px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,0.08);border:1px solid var(--color-border);">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:16px;font-weight:500;">水电工</span>
+        <span style="font-size:16px;font-weight:700;color:#E8362E;">300-500元/天</span>
+      </div>
+      <div style="font-size:13px;color:var(--color-text-secondary);margin-bottom:8px;">深圳市南山区 · 3年经验</div>
+      <div style="display:flex;gap:6px;">
+        <span style="font-size:11px;padding:2px 8px;background:var(--color-primary-light);color:var(--color-primary);border-radius:4px;">包住</span>
+        <span style="font-size:11px;padding:2px 8px;background:var(--color-primary-light);color:var(--color-primary);border-radius:4px;">包吃</span>
+      </div>
+    </div>
+
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>背景色</td><td><code>color/bg/primary</code> (#FFFFFF / #1D1D1F)</td></tr>
+        <tr><td>圆角</td><td>12px (<code>radius/lg</code>)</td></tr>
+        <tr><td>内边距</td><td>16px (<code>spacing/lg</code>)</td></tr>
+        <tr><td>阴影</td><td><code>shadow/sm</code></td></tr>
+        <tr><td>边框</td><td>1px solid <code>color/border/divider</code></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Tag / Badge -->
+  <section class="section">
+    <h2>标签 Tag / 角标 Badge</h2>
+
+    <h3>标签示例</h3>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
+      <span style="font-size:11px;padding:2px 8px;background:#E0F3FF;color:#0092FF;border-radius:4px;">默认标签</span>
+      <span style="font-size:11px;padding:2px 8px;background:#DFF2EC;color:#06B578;border-radius:4px;">成功标签</span>
+      <span style="font-size:11px;padding:2px 8px;background:#FFEFDE;color:#FF8904;border-radius:4px;">警告标签</span>
+      <span style="font-size:11px;padding:2px 8px;background:#FFEBEC;color:#E8362E;border-radius:4px;">危险标签</span>
+    </div>
+
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>字号</td><td>11px (<code>font/size/xxs</code>)</td></tr>
+        <tr><td>内边距</td><td>2px 8px</td></tr>
+        <tr><td>圆角</td><td>4px (<code>radius/xs</code>)</td></tr>
+        <tr><td>背景色</td><td>对应语义色的 light 变体</td></tr>
+        <tr><td>文字色</td><td>对应语义色的 default 值</td></tr>
+      </tbody>
+    </table>
+
+    <h3>角标 Badge</h3>
+    <table class="spec-table">
+      <thead><tr><th>类型</th><th>尺寸</th><th>样式</th></tr></thead>
+      <tbody>
+        <tr><td>红点</td><td>8px × 8px</td><td>圆形，背景 <code>#E8362E</code></td></tr>
+        <tr><td>数字角标</td><td>min-width 16px, height 16px</td><td>圆角 999px，背景 <code>#E8362E</code>，文字 #FFF 10px</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Toast -->
+  <section class="section">
+    <h2>轻提示 Toast</h2>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>背景色</td><td><code>rgba(0,0,0,0.70)</code></td></tr>
+        <tr><td>文字色</td><td><code>#FFFFFF</code></td></tr>
+        <tr><td>字号</td><td>14px</td></tr>
+        <tr><td>圆角</td><td>8px</td></tr>
+        <tr><td>内边距</td><td>12px 24px</td></tr>
+        <tr><td>位置</td><td>屏幕垂直居中</td></tr>
+        <tr><td>持续时间</td><td>1.5–2 秒自动消失</td></tr>
+        <tr><td>z-index</td><td>2000</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ListItem -->
+  <section class="section">
+    <h2>列表项 ListItem</h2>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>最小高度</td><td>52px</td></tr>
+        <tr><td>内边距</td><td>12px 16px</td></tr>
+        <tr><td>分割线</td><td>底部 1px <code>color/border/divider</code>，左侧缩进 16px</td></tr>
+        <tr><td>标题字号</td><td>16px Medium</td></tr>
+        <tr><td>副标题字号</td><td>13px Regular，颜色 <code>color/text/secondary</code></td></tr>
+        <tr><td>右侧箭头</td><td>12px 图标，颜色 <code>color/text/tertiary</code></td></tr>
+        <tr><td>按下态</td><td>背景变为 <code>color/bg/secondary</code></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- NavigationBar -->
+  <section class="section">
+    <h2>导航栏 NavigationBar</h2>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>高度</td><td>44px（不含状态栏）</td></tr>
+        <tr><td>背景色</td><td><code>color/bg/primary</code></td></tr>
+        <tr><td>标题</td><td>18px SemiBold 600，居中</td></tr>
+        <tr><td>左侧返回</td><td>24px 图标 + 可选文字</td></tr>
+        <tr><td>右侧操作</td><td>最多 2 个图标按钮</td></tr>
+        <tr><td>底部分割线</td><td>1px <code>color/border/divider</code></td></tr>
+        <tr><td>z-index</td><td>200</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- TabBar -->
+  <section class="section">
+    <h2>底部标签栏 TabBar</h2>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>高度</td><td>49px（不含安全区）</td></tr>
+        <tr><td>背景色</td><td><code>color/bg/primary</code></td></tr>
+        <tr><td>图标尺寸</td><td>24px × 24px</td></tr>
+        <tr><td>标签字号</td><td>10px</td></tr>
+        <tr><td>默认色</td><td><code>color/text/tertiary</code></td></tr>
+        <tr><td>选中色</td><td><code>color/primary/default</code></td></tr>
+        <tr><td>顶部分割线</td><td>1px <code>color/border/divider</code></td></tr>
+        <tr><td>安全区</td><td>底部 34px（iPhone）</td></tr>
+        <tr><td>z-index</td><td>200</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="colors.html">← 颜色 Color</a>
+    <a href="tokens.html">Tokens →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

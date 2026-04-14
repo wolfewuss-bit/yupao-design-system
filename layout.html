@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>布局原则 Layout — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link active">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>布局与模式 / 布局原则</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">布局原则 Layout</h1>
+  <p style="margin-bottom:24px;">鱼泡直聘的布局系统基于移动端优先的设计理念，采用灵活的栅格和间距体系构建一致的页面结构。</p>
+
+  <section class="section">
+    <h2>栅格系统 Grid System</h2>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>设计稿宽度</td><td>375px (1x)</td><td>基于 iPhone 标准宽度</td></tr>
+        <tr><td>页面水平边距</td><td>16px</td><td>左右各 16px，内容区 343px</td></tr>
+        <tr><td>栅格列数</td><td>灵活</td><td>移动端不强制固定列数，按内容自适应</td></tr>
+        <tr><td>栅格间距</td><td>12px</td><td>多列布局时列间距</td></tr>
+        <tr><td>基础网格</td><td>4px</td><td>所有尺寸和间距基于 4px 网格</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>间距哲学 Spacing Philosophy</h2>
+    <p>间距不仅是视觉美化，更是信息层级的表达工具：</p>
+    <ul>
+      <li><strong>亲密性原则</strong>：相关元素间距小（8px），不相关元素间距大（24px）</li>
+      <li><strong>呼吸感</strong>：大面积留白 + 紧凑的内容区域，避免信息过载</li>
+      <li><strong>节奏感</strong>：重复使用相同的间距值，建立视觉节奏</li>
+      <li><strong>层级表达</strong>：间距大小反映信息层级关系</li>
+    </ul>
+    <table class="spec-table">
+      <thead><tr><th>间距层级</th><th>值</th><th>含义</th></tr></thead>
+      <tbody>
+        <tr><td>元素内部</td><td>4–8px</td><td>紧密关联的子元素（如图标与文字）</td></tr>
+        <tr><td>元素之间</td><td>8–12px</td><td>同一组内的元素（如列表项内部）</td></tr>
+        <tr><td>组之间</td><td>16–20px</td><td>不同功能组之间（如卡片之间）</td></tr>
+        <tr><td>区块之间</td><td>24–32px</td><td>不同内容区块之间（如模块分隔）</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>常见布局模式</h2>
+
+    <h3>1. 列表布局 List Layout</h3>
+    <p>最常用的布局模式，用于职位列表、消息列表、设置页等。</p>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>列表项高度</td><td>自适应，最小 52px</td></tr>
+        <tr><td>列表项内边距</td><td>12px 16px</td></tr>
+        <tr><td>分割线</td><td>1px，左侧缩进 16px</td></tr>
+        <tr><td>列表间距</td><td>0（通过分割线分隔）</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2. 卡片布局 Card Layout</h3>
+    <p>用于职位卡片、人才卡片等信息聚合展示。</p>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>卡片间距</td><td>12px</td></tr>
+        <tr><td>卡片内边距</td><td>16px</td></tr>
+        <tr><td>卡片圆角</td><td>12px</td></tr>
+        <tr><td>卡片阴影</td><td>shadow/sm</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. 表单布局 Form Layout</h3>
+    <p>用于登录、注册、信息编辑等表单页面。</p>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>表单项间距</td><td>16px</td></tr>
+        <tr><td>标签与输入框间距</td><td>8px</td></tr>
+        <tr><td>错误提示间距</td><td>4px（输入框下方）</td></tr>
+        <tr><td>提交按钮间距</td><td>24px（与最后一个表单项）</td></tr>
+      </tbody>
+    </table>
+
+    <h3>4. 详情页布局 Detail Layout</h3>
+    <p>用于职位详情、个人主页等信息展示页面。</p>
+    <table class="spec-table">
+      <thead><tr><th>属性</th><th>值</th></tr></thead>
+      <tbody>
+        <tr><td>模块间距</td><td>24px</td></tr>
+        <tr><td>模块标题与内容</td><td>12px</td></tr>
+        <tr><td>底部操作栏高度</td><td>56px + 安全区</td></tr>
+        <tr><td>底部操作栏内边距</td><td>12px 16px</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>页面结构</h2>
+    <p>鱼泡直聘标准页面由以下层级构成，从上到下依次为：</p>
+
+    <!-- 低保真线框图 -->
+    <div style="display:flex;gap:40px;align-items:flex-start;margin:32px 0;">
+
+      <!-- 手机线框 -->
+      <div style="width:280px;flex-shrink:0;border:2px solid var(--color-text-tertiary);border-radius:20px;overflow:hidden;background:var(--color-bg-primary);">
+
+        <!-- StatusBar -->
+        <div style="height:28px;background:var(--color-bg-secondary);border-bottom:1px solid var(--color-border);display:flex;align-items:center;justify-content:center;">
+          <div style="width:60px;height:6px;background:var(--color-text-disabled);border-radius:3px;"></div>
+        </div>
+
+        <!-- NavigationBar -->
+        <div style="height:44px;border-bottom:1px solid var(--color-border);display:flex;align-items:center;padding:0 12px;gap:8px;">
+          <div style="width:8px;height:8px;border-left:2px solid var(--color-text-tertiary);border-bottom:2px solid var(--color-text-tertiary);transform:rotate(45deg);"></div>
+          <div style="flex:1;height:10px;background:var(--color-text-disabled);border-radius:2px;max-width:80px;margin:0 auto;"></div>
+          <div style="width:16px;height:3px;display:flex;flex-direction:column;gap:2px;">
+            <div style="width:3px;height:3px;background:var(--color-text-tertiary);border-radius:50%;"></div>
+          </div>
+        </div>
+
+        <!-- Content Area -->
+        <div style="min-height:300px;padding:12px;background:var(--color-bg-secondary);">
+          <!-- 搜索栏占位 -->
+          <div style="height:32px;border:1.5px dashed var(--color-text-disabled);border-radius:16px;margin-bottom:10px;display:flex;align-items:center;padding:0 10px;">
+            <div style="width:12px;height:12px;border:1.5px solid var(--color-text-disabled);border-radius:50%;margin-right:6px;"></div>
+            <div style="width:60%;height:6px;background:var(--color-text-disabled);border-radius:2px;opacity:0.5;"></div>
+          </div>
+          <!-- 卡片占位 1 -->
+          <div style="border:1.5px solid var(--color-border);border-radius:8px;padding:10px;margin-bottom:8px;background:var(--color-bg-primary);">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+              <div style="width:50%;height:8px;background:var(--color-text-disabled);border-radius:2px;"></div>
+              <div style="width:20%;height:8px;background:var(--color-text-disabled);border-radius:2px;"></div>
+            </div>
+            <div style="width:40%;height:6px;background:var(--color-text-disabled);border-radius:2px;opacity:0.5;margin-bottom:8px;"></div>
+            <div style="display:flex;gap:4px;">
+              <div style="width:32px;height:14px;border:1px solid var(--color-text-disabled);border-radius:3px;"></div>
+              <div style="width:32px;height:14px;border:1px solid var(--color-text-disabled);border-radius:3px;"></div>
+            </div>
+          </div>
+          <!-- 卡片占位 2 -->
+          <div style="border:1.5px solid var(--color-border);border-radius:8px;padding:10px;margin-bottom:8px;background:var(--color-bg-primary);">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+              <div style="width:45%;height:8px;background:var(--color-text-disabled);border-radius:2px;"></div>
+              <div style="width:22%;height:8px;background:var(--color-text-disabled);border-radius:2px;"></div>
+            </div>
+            <div style="width:35%;height:6px;background:var(--color-text-disabled);border-radius:2px;opacity:0.5;margin-bottom:8px;"></div>
+            <div style="display:flex;gap:4px;">
+              <div style="width:32px;height:14px;border:1px solid var(--color-text-disabled);border-radius:3px;"></div>
+              <div style="width:40px;height:14px;border:1px solid var(--color-text-disabled);border-radius:3px;"></div>
+            </div>
+          </div>
+          <!-- 卡片占位 3 -->
+          <div style="border:1.5px solid var(--color-border);border-radius:8px;padding:10px;background:var(--color-bg-primary);">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+              <div style="width:55%;height:8px;background:var(--color-text-disabled);border-radius:2px;"></div>
+              <div style="width:18%;height:8px;background:var(--color-text-disabled);border-radius:2px;"></div>
+            </div>
+            <div style="width:38%;height:6px;background:var(--color-text-disabled);border-radius:2px;opacity:0.5;"></div>
+          </div>
+        </div>
+
+        <!-- TabBar -->
+        <div style="height:49px;border-top:1px solid var(--color-border);display:flex;background:var(--color-bg-primary);">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;">
+            <div style="width:18px;height:18px;border:1.5px solid var(--color-text-tertiary);border-radius:50%;"></div>
+            <div style="width:20px;height:4px;background:var(--color-text-disabled);border-radius:1px;"></div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;">
+            <div style="width:18px;height:18px;border:1.5px solid var(--color-text-disabled);border-radius:4px;"></div>
+            <div style="width:20px;height:4px;background:var(--color-text-disabled);border-radius:1px;"></div>
+          </div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;">
+            <div style="width:18px;height:18px;border:1.5px solid var(--color-text-disabled);border-radius:50%;"></div>
+            <div style="width:20px;height:4px;background:var(--color-text-disabled);border-radius:1px;"></div>
+          </div>
+        </div>
+
+        <!-- Home Indicator -->
+        <div style="height:20px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-primary);">
+          <div style="width:100px;height:4px;background:var(--color-text-disabled);border-radius:2px;"></div>
+        </div>
+      </div>
+
+      <!-- 右侧标注 -->
+      <div style="flex:1;font-size:13px;padding-top:4px;">
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <!-- StatusBar 标注 -->
+          <div style="height:28px;display:flex;align-items:center;gap:12px;border-left:2px solid var(--color-text-disabled);padding-left:12px;">
+            <span style="color:var(--color-text-secondary);font-weight:500;">StatusBar</span>
+            <span style="color:var(--color-text-tertiary);">44px (iOS) / 24px (Android)</span>
+          </div>
+          <!-- NavigationBar 标注 -->
+          <div style="height:44px;display:flex;align-items:center;gap:12px;border-left:2px solid var(--color-primary);padding-left:12px;">
+            <span style="color:var(--color-text-secondary);font-weight:500;">NavigationBar</span>
+            <span style="color:var(--color-text-tertiary);">44px · 返回 + 标题 + 操作</span>
+          </div>
+          <!-- Content 标注 -->
+          <div style="min-height:300px;display:flex;align-items:center;gap:12px;border-left:2px solid var(--color-success);padding-left:12px;">
+            <div>
+              <div style="color:var(--color-text-secondary);font-weight:500;margin-bottom:4px;">Content Area</div>
+              <div style="color:var(--color-text-tertiary);line-height:1.6;">
+                自适应高度 · 可滚动<br>
+                水平内边距 16px<br>
+                内容宽度 343px
+              </div>
+            </div>
+          </div>
+          <!-- TabBar 标注 -->
+          <div style="height:49px;display:flex;align-items:center;gap:12px;border-left:2px solid var(--color-warning);padding-left:12px;">
+            <span style="color:var(--color-text-secondary);font-weight:500;">TabBar</span>
+            <span style="color:var(--color-text-tertiary);">49px · 图标 + 标签</span>
+          </div>
+          <!-- SafeArea 标注 -->
+          <div style="height:20px;display:flex;align-items:center;gap:12px;border-left:2px solid var(--color-text-disabled);padding-left:12px;">
+            <span style="color:var(--color-text-secondary);font-weight:500;">SafeArea</span>
+            <span style="color:var(--color-text-tertiary);">34px (iPhone)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 尺寸标注表 -->
+    <table class="spec-table" style="margin-top:16px;">
+      <thead><tr><th>区域</th><th>高度</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>StatusBar</td><td>44px (iOS) / 24px+ (Android)</td><td>系统状态栏，显示时间、信号、电量</td></tr>
+        <tr><td>NavigationBar</td><td>44px</td><td>导航栏：返回按钮 + 页面标题 + 右侧操作</td></tr>
+        <tr><td>Content Area</td><td>自适应</td><td>主内容区，可滚动，水平内边距 16px</td></tr>
+        <tr><td>TabBar</td><td>49px</td><td>底部标签栏：图标 20px + 标签 10px + 间距</td></tr>
+        <tr><td>SafeArea</td><td>34px (iPhone) / 0px (Android)</td><td>底部安全区域，避免 Home Indicator 遮挡</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="motion.html">← 动效 Motion</a>
+    <a href="responsive.html">响应式适配 →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

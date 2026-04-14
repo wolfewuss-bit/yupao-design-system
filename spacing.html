@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>间距 Spacing — 鱼泡直聘 Design</title>
+<link rel="stylesheet" href="style.css"><script>var t=localStorage.getItem("yp-theme");if(t)document.documentElement.setAttribute("data-theme",t);</script>
+</head>
+<body>
+<header class="top-nav"><div class="top-nav-inner">
+  <div class="nav-left">
+    <a href="index.html" class="logo"><span class="logo-icon"><img src="logo.png" alt="鱼泡直聘" style="width:100%;height:100%;object-fit:cover;border-radius:6px;"></span><span class="logo-text">鱼泡直聘 Design</span></a>
+    <nav class="top-links"><a href="index.html">设计语言</a><a href="components.html">组件</a><a href="tokens.html">Tokens</a><a href="resources.html">资源</a></nav>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="切换主题"><svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><svg class="icon-sun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button>
+  </div>
+</div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-section"><div class="sidebar-title">设计语言</div><a href="index.html" class="sidebar-link">介绍</a><a href="design-principles.html" class="sidebar-link">设计原则</a><a href="design-values.html" class="sidebar-link">设计价值观</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">视觉</div><a href="colors.html" class="sidebar-link">颜色 Color</a><a href="typography.html" class="sidebar-link">字体排版 Typography</a><a href="spacing.html" class="sidebar-link active">间距 Spacing</a><a href="radius.html" class="sidebar-link">圆角 Radius</a><a href="shadow.html" class="sidebar-link">阴影 Shadow</a><a href="iconography.html" class="sidebar-link">图标 Iconography</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">内容策略</div><a href="naming.html" class="sidebar-link">命名策略</a><a href="copywriting.html" class="sidebar-link">文案规范</a><a href="accessibility.html" class="sidebar-link">无障碍</a><a href="motion.html" class="sidebar-link">动效 Motion</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">布局与模式</div><a href="layout.html" class="sidebar-link">布局原则</a><a href="responsive.html" class="sidebar-link">响应式适配</a></div>
+  <div class="sidebar-section"><div class="sidebar-title">其他</div><a href="dos-donts.html" class="sidebar-link">Do's & Don'ts</a><a href="changelog.html" class="sidebar-link">变更日志</a></div>
+</aside>
+<div class="content-area"><main class="content">
+  <div class="page-header"><div class="page-anchor"><span class="anchor-dot"></span>视觉 / 间距</div></div>
+
+  <h1 style="font-size:28px;font-weight:700;margin-bottom:8px;">间距 Spacing</h1>
+  <p style="margin-bottom:24px;">间距系统基于 <strong>4px 模块化网格</strong>，确保界面元素之间的节奏感和一致性。所有间距值均为 4 的倍数（2px 为特殊微调值）。</p>
+
+  <section class="section">
+    <h2>间距阶梯 Spacing Scale</h2>
+    <p>可视化展示每个间距 Token 的实际大小。</p>
+
+    <div class="spacing-row">
+      <div class="spacing-label">0px · <code>spacing/none</code></div>
+      <div class="spacing-bar" style="width:0px;min-width:2px;opacity:0.3;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">2px · <code>spacing/xxs</code></div>
+      <div class="spacing-bar" style="width:2px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">4px · <code>spacing/xs</code></div>
+      <div class="spacing-bar" style="width:4px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">6px · <code>spacing/s</code></div>
+      <div class="spacing-bar" style="width:6px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">8px · <code>spacing/sm</code></div>
+      <div class="spacing-bar" style="width:8px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">12px · <code>spacing/md</code></div>
+      <div class="spacing-bar" style="width:12px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">16px · <code>spacing/lg</code></div>
+      <div class="spacing-bar" style="width:16px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">20px · <code>spacing/xl</code></div>
+      <div class="spacing-bar" style="width:20px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">24px · <code>spacing/xxl</code></div>
+      <div class="spacing-bar" style="width:24px;"></div>
+    </div>
+    <div class="spacing-row">
+      <div class="spacing-label">32px · <code>spacing/xxxl</code></div>
+      <div class="spacing-bar" style="width:32px;"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>4px 模块化网格</h2>
+    <p>所有间距值基于 4px 基础单元，保证视觉节奏的一致性：</p>
+    <ul>
+      <li><strong>4px</strong> — 基础单元，最小可感知间距</li>
+      <li><strong>8px</strong> — 2 × 基础单元，元素内部间距</li>
+      <li><strong>16px</strong> — 4 × 基础单元，标准页面边距</li>
+      <li><strong>24px</strong> — 6 × 基础单元，区块间距</li>
+      <li><strong>32px</strong> — 8 × 基础单元，大区块分隔</li>
+    </ul>
+    <p>例外：2px 和 6px 用于微调场景（如图标与文字间距、紧凑列表项）。</p>
+  </section>
+
+  <section class="section">
+    <h2>使用指南 Usage Guide</h2>
+    <table class="spec-table">
+      <thead><tr><th>Token</th><th>值</th><th>使用场景</th></tr></thead>
+      <tbody>
+        <tr><td><code>spacing/none</code></td><td>0px</td><td>无间距，元素紧贴</td></tr>
+        <tr><td><code>spacing/xxs</code></td><td>2px</td><td>微调间距，图标与文字微间距</td></tr>
+        <tr><td><code>spacing/xs</code></td><td>4px</td><td>紧凑元素间距，标签内边距</td></tr>
+        <tr><td><code>spacing/s</code></td><td>6px</td><td>小元素间距，列表项内部</td></tr>
+        <tr><td><code>spacing/sm</code></td><td>8px</td><td>元素内部间距，按钮内边距</td></tr>
+        <tr><td><code>spacing/md</code></td><td>12px</td><td>卡片内边距，段落间距</td></tr>
+        <tr><td><code>spacing/lg</code></td><td>16px</td><td>页面水平边距，区块内间距</td></tr>
+        <tr><td><code>spacing/xl</code></td><td>20px</td><td>卡片间距，模块间距</td></tr>
+        <tr><td><code>spacing/xxl</code></td><td>24px</td><td>大区块间距，页面顶部间距</td></tr>
+        <tr><td><code>spacing/xxxl</code></td><td>32px</td><td>页面底部安全区，大模块分隔</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>常见布局间距</h2>
+    <table class="spec-table">
+      <thead><tr><th>布局场景</th><th>间距值</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>页面水平边距</td><td>16px</td><td>页面内容区左右 padding</td></tr>
+        <tr><td>卡片内边距</td><td>12–16px</td><td>卡片内容区 padding</td></tr>
+        <tr><td>列表项间距</td><td>8–12px</td><td>列表项之间的垂直间距</td></tr>
+        <tr><td>标题与内容</td><td>8px</td><td>标题下方到内容的间距</td></tr>
+        <tr><td>区块间距</td><td>20–24px</td><td>不同功能区块之间的间距</td></tr>
+        <tr><td>底部安全区</td><td>34px</td><td>iPhone 底部安全区域高度</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="page-nav">
+    <a href="typography.html">← 字体排版</a>
+    <a href="radius.html">圆角 Radius →</a>
+  </div>
+  <footer class="footer"><p>鱼泡直聘 Design System v2.1.0</p></footer>
+</main></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
