@@ -451,9 +451,9 @@ a:hover { opacity: 0.85; }
 .content { animation: pageIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) both; }
 
 /* Sidebar link hover micro-interaction */
-.sidebar-link { transition: all 0.15s ease, padding-left 0.2s ease; }
-.sidebar-link:hover { padding-left: 32px; }
-.sidebar-link.active { padding-left: 32px; }
+.sidebar-link { transition: all 0.15s ease; }
+.sidebar-link:hover { }
+.sidebar-link.active { }
 
 /* Card hover lift */
 .value-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
