@@ -477,3 +477,12 @@ a:hover { opacity: 0.85; }
   .value-card, .nav-card, .color-swatch, .sidebar-link, .btn-primary, .btn-secondary { transition: none; }
   .value-card:hover, .nav-card:hover, .color-swatch:hover { transform: none; }
 }
+
+
+/* Dark theme: value-icon background override */
+[data-theme="dark"] .value-icon {
+  background: var(--color-bg-input) !important;
+}
+[data-theme="dark"] .nav-card-icon {
+  background: var(--color-bg-input) !important;
+}
