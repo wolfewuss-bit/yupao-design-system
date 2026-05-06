@@ -1,22 +1,58 @@
 // Theme Toggle
 const themeToggle = document.getElementById('themeToggle');
 
-function setTheme(theme) {
+function getAutoTheme() {
+  const hour = new Date().getHours();
+  return (hour >= 7 && hour < 20) ? 'light' : 'dark';
+}
+
+function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('yp-theme', theme);
-  // Toggle sun/moon icons
   document.querySelectorAll('.icon-moon').forEach(el => el.style.display = theme === 'dark' ? 'none' : 'block');
   document.querySelectorAll('.icon-sun').forEach(el => el.style.display = theme === 'dark' ? 'block' : 'none');
 }
 
-// Init theme
-const saved = localStorage.getItem('yp-theme');
-if (saved) setTheme(saved);
+function setMode(mode) {
+  localStorage.setItem('yp-theme-mode', mode);
+  if (mode === 'auto') {
+    localStorage.removeItem('yp-theme');
+    applyTheme(getAutoTheme());
+  } else {
+    localStorage.setItem('yp-theme', mode);
+    applyTheme(mode);
+  }
+  updateToggleTitle(mode);
+}
 
+function updateToggleTitle(mode) {
+  if (!themeToggle) return;
+  const labels = { auto: '当前：自动模式（点击切换为浅色）', light: '当前：浅色模式（点击切换为深色）', dark: '当前：深色模式（点击切换为自动）' };
+  themeToggle.setAttribute('title', labels[mode] || '切换主题');
+}
+
+function getCurrentMode() {
+  return localStorage.getItem('yp-theme-mode') || 'auto';
+}
+
+// Init theme
+(function initTheme() {
+  const mode = getCurrentMode();
+  setMode(mode);
+})();
+
+// Click: auto → light → dark → auto
 themeToggle?.addEventListener('click', () => {
-  const current = document.documentElement.getAttribute('data-theme');
-  setTheme(current === 'dark' ? 'light' : 'dark');
+  const mode = getCurrentMode();
+  const next = mode === 'auto' ? 'light' : mode === 'light' ? 'dark' : 'auto';
+  setMode(next);
 });
+
+// Auto-mode: check every minute for time-based switch
+setInterval(() => {
+  if (getCurrentMode() === 'auto') {
+    applyTheme(getAutoTheme());
+  }
+}, 60000);
 
 // Color swatch click to copy
 document.querySelectorAll('.color-swatch').forEach(swatch => {
