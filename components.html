@@ -155,6 +155,24 @@
   <!-- Toast -->
   <section class="section">
     <h2>轻提示 Toast</h2>
+    <p>轻提示用于操作后的即时反馈，短暂显示后自动消失。</p>
+
+    <h3>Toast 示例</h3>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin:16px 0;align-items:center;">
+      <div style="position:relative;width:200px;height:120px;background:var(--color-bg-secondary);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+        <div style="padding:12px 24px;background:rgba(0,0,0,0.70);color:#fff;font-size:14px;border-radius:8px;">操作成功</div>
+      </div>
+      <div style="position:relative;width:200px;height:120px;background:var(--color-bg-secondary);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+        <div style="padding:12px 24px;background:rgba(0,0,0,0.70);color:#fff;font-size:14px;border-radius:8px;display:flex;align-items:center;gap:6px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          已收藏
+        </div>
+      </div>
+      <div style="position:relative;width:200px;height:120px;background:var(--color-bg-secondary);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+        <div style="padding:12px 24px;background:rgba(0,0,0,0.70);color:#fff;font-size:14px;border-radius:8px;">网络异常，请重试</div>
+      </div>
+    </div>
+
     <table class="spec-table">
       <thead><tr><th>属性</th><th>值</th></tr></thead>
       <tbody>
@@ -173,6 +191,32 @@
   <!-- ListItem -->
   <section class="section">
     <h2>列表项 ListItem</h2>
+    <p>列表项是信息流的基本单元，用于展示可点击的条目内容。</p>
+
+    <h3>列表项示例</h3>
+    <div style="max-width:400px;margin:16px 0;background:var(--color-bg-primary);border-radius:12px;overflow:hidden;border:1px solid var(--color-border);">
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--color-border);">
+        <div>
+          <div style="font-size:16px;font-weight:500;">个人信息</div>
+          <div style="font-size:13px;color:var(--color-text-secondary);margin-top:2px;">完善信息提高曝光率</div>
+        </div>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-tertiary)" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--color-border);">
+        <div>
+          <div style="font-size:16px;font-weight:500;">我的简历</div>
+          <div style="font-size:13px;color:var(--color-text-secondary);margin-top:2px;">已更新 2 份简历</div>
+        </div>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-tertiary)" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 16px;">
+        <div>
+          <div style="font-size:16px;font-weight:500;">账号与安全</div>
+        </div>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-tertiary)" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
+    </div>
+
     <table class="spec-table">
       <thead><tr><th>属性</th><th>值</th></tr></thead>
       <tbody>
@@ -190,6 +234,27 @@
   <!-- NavigationBar -->
   <section class="section">
     <h2>导航栏 NavigationBar</h2>
+    <p>导航栏位于页面顶部，提供页面标题和操作入口。</p>
+
+    <h3>导航栏示例</h3>
+    <div style="max-width:400px;margin:16px 0;background:var(--color-bg-primary);border-radius:12px;overflow:hidden;border:1px solid var(--color-border);">
+      <div style="height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid var(--color-border);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-primary)" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        <span style="font-size:18px;font-weight:600;">职位详情</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-primary)" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+      </div>
+    </div>
+    <div style="max-width:400px;margin:16px 0;background:var(--color-bg-primary);border-radius:12px;overflow:hidden;border:1px solid var(--color-border);">
+      <div style="height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid var(--color-border);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-primary)" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        <span style="font-size:18px;font-weight:600;">消息</span>
+        <div style="display:flex;gap:16px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-primary)" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-primary)" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+      </div>
+    </div>
+
     <table class="spec-table">
       <thead><tr><th>属性</th><th>值</th></tr></thead>
       <tbody>
@@ -207,6 +272,30 @@
   <!-- TabBar -->
   <section class="section">
     <h2>底部标签栏 TabBar</h2>
+    <p>底部标签栏用于 App 主要页面之间的切换导航。</p>
+
+    <h3>TabBar 示例</h3>
+    <div style="max-width:400px;margin:16px 0;background:var(--color-bg-primary);border-radius:12px;overflow:hidden;border:1px solid var(--color-border);">
+      <div style="height:49px;display:flex;align-items:center;justify-content:space-around;border-top:1px solid var(--color-border);">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0092FF" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span style="font-size:10px;color:#0092FF;">首页</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-tertiary)" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span style="font-size:10px;color:var(--color-text-tertiary);">发现</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-tertiary)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span style="font-size:10px;color:var(--color-text-tertiary);">消息</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:2px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-tertiary)" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span style="font-size:10px;color:var(--color-text-tertiary);">我的</span>
+        </div>
+      </div>
+    </div>
+
     <table class="spec-table">
       <thead><tr><th>属性</th><th>值</th></tr></thead>
       <tbody>
